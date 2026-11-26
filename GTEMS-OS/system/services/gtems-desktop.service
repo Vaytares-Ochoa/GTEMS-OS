@@ -1,0 +1,17 @@
+[Unit]
+Description=GTEMS OS Aurora Desktop Environment & System Daemon
+After=network-online.target systemd-user-sessions.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=gtems
+WorkingDirectory=/opt/gtems-os
+ExecStart=/opt/gtems-os/node_modules/.bin/tsx /opt/gtems-os/server.ts
+Restart=on-failure
+RestartSec=3
+Environment=NODE_ENV=production
+Environment=PORT=3000
+
+[Install]
+WantedBy=graphical.target

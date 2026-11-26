@@ -1,0 +1,109 @@
+{
+  "installed": false,
+  "installDate": null,
+  "productId": "GTEMS-AURORA-B00DE7",
+  "deviceId": "9A30F668-FDCDDB48",
+  "users": [],
+  "personalization": {
+    "theme": "light",
+    "themeId": "zeyla-aurora",
+    "customTheme": {
+      "bg": "#F5FCFA",
+      "surface": "#FFFFFF",
+      "text": "#0F272B",
+      "accent": "#398F91",
+      "border": "rgba(57, 143, 145, 0.22)",
+      "isDark": false
+    },
+    "wallpaper": "/src/assets/images/gtems_aurora_wallpaper_1795655915565.jpg",
+    "wallpaperFit": "cover",
+    "lockWallpaper": "/src/assets/images/gtems_aurora_lockscreen_1795655916431.jpg",
+    "lockWallpaperFit": "cover",
+    "accentColor": "#398F91",
+    "fontSize": "normal",
+    "iconSize": "normal",
+    "uiScale": 1,
+    "transparency": true,
+    "transparencyLevel": 82,
+    "animations": true,
+    "animationLevel": "normal",
+    "animationSpeed": 1,
+    "systemSounds": true,
+    "cursorStyle": "modern",
+    "cursorSize": "normal",
+    "cursorColor": "#398F91",
+    "taskbarPosition": "left",
+    "taskbarWidthMode": "normal",
+    "borderRadius": "normal",
+    "spacingDensity": "comfortable",
+    "menuDensity": "comfortable"
+  },
+  "pinnedApps": [
+    "explorer",
+    "browser",
+    "terminal",
+    "code-studio",
+    "settings",
+    "task-manager"
+  ],
+  "startupApps": [],
+  "recentFiles": [
+    "/Documentos/Bienvenida_GTEMS_OS.md",
+    "/Proyectos/hola.py",
+    "/Documentos/Ejemplo.html"
+  ],
+  "notifications": [
+    {
+      "id": "notif-welcome",
+      "title": "GTEMS OS 1.0 Aurora",
+      "body": "Sistema operativo modular inicializado sobre kernel Linux.",
+      "category": "system",
+      "timestamp": "2026-11-26T02:17:40.283Z",
+      "read": false
+    }
+  ],
+  "bookmarks": [
+    {
+      "id": "bm-1",
+      "title": "Google",
+      "url": "https://www.google.com",
+      "createdAt": "2026-11-26T02:17:40.283Z"
+    },
+    {
+      "id": "bm-2",
+      "title": "Debian Linux",
+      "url": "https://www.debian.org",
+      "createdAt": "2026-11-26T02:17:40.283Z"
+    },
+    {
+      "id": "bm-3",
+      "title": "Kernel.org",
+      "url": "https://www.kernel.org",
+      "createdAt": "2026-11-26T02:17:40.283Z"
+    }
+  ],
+  "history": [],
+  "downloads": [],
+  "terminalHistory": [],
+  "searchHistory": [],
+  "defaultBrowser": "gtems-browser",
+  "language": "es-HN",
+  "timezone": "America/Tegucigalpa",
+  "autoTimezone": false,
+  "region": "Honduras",
+  "keyboardLayout": "es-LATAM",
+  "doNotDisturb": false,
+  "volume": 72,
+  "muted": false,
+  "brightness": 95,
+  "powerMode": "balanced",
+  "auditLogs": [
+    {
+      "id": "log-boot",
+      "timestamp": "2026-11-26T02:17:40.283Z",
+      "level": "INFO",
+      "action": "SYSTEM_BOOT",
+      "detail": "Servicios base de GTEMS OS iniciados correctamente."
+    }
+  ]
+}

@@ -1,0 +1,2084 @@
+# PROMPT MAESTRO DEFINITIVO: CREACIÓN DE GTEMS OS DESDE CERO
+
+## «GTEMS OS»
+### Diseñado por cinco mentes, construido para el futuro.
+
+Actúa como un equipo multidisciplinario de ingeniería de software, arquitectura de sistemas operativos, desarrollo de kernels, programación de bajo nivel, interfaces gráficas, seguridad informática, redes, controladores, compiladores, navegadores web y desarrollo de aplicaciones de escritorio.
+
+Tu misión es diseñar, desarrollar e implementar desde cero un nuevo sistema operativo denominado **GTEMS OS**, tomando como referencia todos los requisitos funcionales y visuales especificados en este documento.
+
+No quiero una página web que simule ser un sistema operativo, ni un simple escritorio desarrollado en React con botones decorativos. Quiero un proyecto de sistema operativo real, instalable, arrancable, con una arquitectura funcional, servicios nativos, administración de hardware, conectividad, terminal, aplicaciones y una interfaz gráfica completa.
+
+El resultado debe ser un sistema operativo con identidad propia, desarrollado de manera modular y con capacidad de ejecutarse directamente en un equipo físico o en una máquina virtual.
+
+**REGLA PRINCIPAL: TODAS LAS FUNCIONES DEBEN SER REALES Y FUNCIONALES. NO IMPLEMENTES SIMULACIONES QUE SE PRESENTEN COMO FUNCIONES REALES.**
+
+---
+
+# 1. IDENTIDAD OFICIAL DEL SISTEMA
+
+El nuevo sistema operativo debe identificarse exclusivamente como:
+
+**Nombre:** GTEMS OS
+
+**Slogan oficial:**
+
+«Diseñado por cinco mentes, construido para el futuro.»
+
+GTEMS OS debe tener una identidad tecnológica propia. No debe conservar referencias visibles a ZEYLA OS, ZEYLA NET ni a sus nombres anteriores.
+
+Reemplaza los nombres anteriores por la nueva identidad GTEMS OS en:
+
+- Pantalla de arranque.
+- Instalador.
+- Pantalla de bloqueo.
+- Inicio de sesión.
+- Escritorio.
+- Barra de tareas.
+- Menú de inicio.
+- Administrador de archivos.
+- Navegador.
+- Terminal.
+- Configuración.
+- Notificaciones.
+- Información del sistema.
+- Aplicaciones predeterminadas.
+- Mensajes de error.
+- Documentación.
+- Logotipos.
+- Iconos.
+- Metadatos del sistema.
+
+No dejes nombres anteriores, logotipos antiguos ni referencias a ZEYLA OS en la interfaz final.
+
+## 1.1. Desarrolladores oficiales
+
+En la información del sistema y en la sección «Acerca de» deben aparecer los cinco desarrolladores:
+
+1. GLENDA SAMAHI ARDON ZELAYA
+2. TATIANA VAYTARES OCHOA AGUILAR
+3. CARLOS ROBERTO SUAZO
+4. EDER JOSUE CABRERA RAMOS
+5. MAYLON ASAEL SÁNCHEZ SOSA
+
+Escribe los nombres exactamente como aparecen.
+
+No inventes cargos, fotografías, biografías ni información personal.
+
+---
+
+# 2. ARQUITECTURA REAL DEL SISTEMA OPERATIVO
+
+Esta es una de las partes más importantes del proyecto.
+
+GTEMS OS debe tener una arquitectura de sistema operativo real, no depender exclusivamente de un navegador web.
+
+## 2.1. Kernel
+
+Implementa un kernel funcional.
+
+Como base técnica, utiliza el kernel Linux con una configuración, integración y personalización propias de GTEMS OS.
+
+No intentes desarrollar un kernel completo desde cero sin disponer de la infraestructura necesaria para hacerlo arrancable y estable. El objetivo es crear un sistema operativo propio basado en una arquitectura de kernel real, con servicios, configuración, controladores y componentes propios.
+
+El kernel debe encargarse de las funciones fundamentales:
+
+- Administración de procesos.
+- Administración de memoria.
+- Planificación de tareas.
+- Comunicación entre procesos.
+- Gestión de interrupciones.
+- Administración de dispositivos.
+- Sistema de archivos.
+- Gestión de permisos.
+- Comunicación con el hardware.
+- Manejo de errores del sistema.
+- Administración de recursos.
+- Gestión de usuarios.
+- Seguridad y aislamiento.
+
+Integra los módulos y controladores necesarios según el hardware compatible.
+
+## 2.2. Arquitectura por capas
+
+Organiza GTEMS OS en capas:
+
+**Capa 1. Kernel**
+
+Control del hardware, procesos, memoria, interrupciones y recursos.
+
+**Capa 2. Servicios del sistema**
+
+Servicios de red, audio, almacenamiento, dispositivos, sesiones, usuarios, energía y seguridad.
+
+**Capa 3. Controladores**
+
+Controladores de hardware y dispositivos externos.
+
+**Capa 4. Entorno gráfico**
+
+Gestor de ventanas, compositor, escritorio, barra de tareas y aplicaciones.
+
+**Capa 5. Aplicaciones**
+
+Navegador, explorador de archivos, terminal, reproductores, editor de imágenes, configuración y demás herramientas.
+
+**Capa 6. Interacción del usuario**
+
+Escritorio, menús, ventanas, notificaciones, accesos directos y controles.
+
+Cada capa debe tener responsabilidades claras y comunicarse mediante interfaces definidas.
+
+## 2.3. Sistema de arranque
+
+Implementa un proceso de arranque real.
+
+Debe incluir:
+
+- Firmware BIOS/UEFI compatible según la plataforma.
+- Gestor de arranque.
+- Kernel.
+- Initramfs.
+- Inicialización de servicios.
+- Detección de hardware.
+- Inicio del entorno gráfico.
+- Pantalla de bienvenida.
+- Pantalla de bloqueo.
+- Inicio de sesión.
+
+Utiliza un gestor de arranque compatible con la arquitectura elegida, como GRUB o systemd-boot.
+
+El arranque debe funcionar en una máquina virtual y en hardware físico compatible.
+
+## 2.4. Gestión de procesos y memoria
+
+Implementa la administración real de procesos del sistema anfitrión mediante el kernel.
+
+Debe permitir:
+
+- Ejecutar procesos.
+- Finalizar procesos.
+- Consultar procesos activos.
+- Consultar consumo de memoria.
+- Consultar CPU.
+- Consultar recursos.
+- Gestionar prioridades.
+- Administrar procesos en segundo plano.
+
+Incluye un administrador de tareas visual.
+
+---
+
+# 3. INSTALADOR COMPLETO DE GTEMS OS
+
+Desarrolla un instalador real que permita instalar GTEMS OS en un equipo.
+
+No debe ser una pantalla decorativa que simplemente muestre una barra de progreso.
+
+## 3.1. Pantalla inicial
+
+Mostrar:
+
+- Logotipo GTEMS OS.
+- Nombre del sistema.
+- Slogan oficial.
+- Botón «Instalar GTEMS OS».
+- Botón «Probar sin instalar», si se implementa un entorno Live.
+- Información de versión.
+
+## 3.2. Asistente de instalación
+
+Organiza la instalación mediante pasos:
+
+1. Bienvenida.
+2. Selección del idioma.
+3. Selección de región.
+4. Distribución del teclado.
+5. Comprobación de requisitos.
+6. Detección de hardware.
+7. Configuración de conexión a Internet.
+8. Selección del disco de instalación.
+9. Particionado.
+10. Configuración del usuario.
+11. Creación de contraseña.
+12. Configuración de zona horaria.
+13. Resumen.
+14. Confirmación.
+15. Instalación.
+16. Configuración final.
+17. Reinicio.
+
+## 3.3. Instalación real
+
+Implementa:
+
+- Detección de unidades.
+- Identificación de discos.
+- Particionado.
+- Formateo de particiones seleccionadas.
+- Instalación del sistema de archivos.
+- Copia de archivos del sistema.
+- Instalación del kernel.
+- Configuración del gestor de arranque.
+- Instalación de paquetes.
+- Creación del usuario.
+- Configuración de permisos.
+- Configuración de servicios.
+- Configuración de red.
+- Generación de archivos de arranque.
+
+El instalador debe comprobar los requisitos antes de modificar discos.
+
+**IMPORTANTE:** las operaciones destructivas deben requerir confirmación explícita y mostrar claramente qué unidad y particiones serán modificadas. No debe borrar discos automáticamente.
+
+## 3.4. Crear medio de instalación
+
+Genera una imagen ISO arrancable de GTEMS OS.
+
+Debe permitir:
+
+- Arrancar desde USB.
+- Arrancar en máquinas virtuales.
+- Instalar en un disco.
+- Iniciar un entorno de prueba, si se implementa.
+
+Documenta cómo crear un USB de instalación y cómo verificar la integridad de la ISO.
+
+---
+
+# 4. INTERFAZ GRÁFICA GENERAL
+
+Desarrolla un entorno de escritorio completo y original.
+
+El sistema debe tener el comportamiento de un sistema operativo de escritorio convencional, pero con una identidad visual propia.
+
+Debe incluir:
+
+- Escritorio.
+- Fondo de pantalla.
+- Iconos.
+- Barra de tareas.
+- Menú de inicio.
+- Ventanas.
+- Explorador de archivos.
+- Centro de notificaciones.
+- Calendario.
+- Reloj.
+- Configuración.
+- Panel de conectividad.
+- Menús contextuales.
+- Gestor de ventanas.
+- Accesos directos.
+- Papelera.
+- Aplicaciones abiertas.
+
+Todo debe funcionar de forma integrada.
+
+## 4.1. Identidad visual GTEMS OS
+
+Utiliza como punto de partida la dirección visual que se trabajó anteriormente para ZEYLA OS bajo el concepto **AURORA**:
+
+- Verde menta.
+- Turquesa.
+- Azul suave.
+- Blanco luminoso.
+- Superficies translúcidas.
+- Degradados tipo aurora.
+- Vidrio esmerilado.
+- Reflejos suaves.
+- Bordes luminosos discretos.
+- Tipografía moderna.
+- Animaciones fluidas.
+
+Paleta de referencia:
+
+| Color | Código |
+|---|---|
+| Aurora White | #F5FCFA |
+| Mint Frost | #DDF5EC |
+| Soft Mint | #BCEBDD |
+| Aurora Turquoise | #79D9CE |
+| Ice Blue | #CDEBFA |
+| Sky Blue | #A8D5EF |
+| Deep Teal | #398F91 |
+| Aurora Blue | #75B8DD |
+
+Esta paleta constituye una base visual que puede ampliarse mediante personalización.
+
+No copies los iconos de Windows, macOS o Linux.
+
+Crea una iconografía original para GTEMS OS, coherente en todo el sistema.
+
+No utilices emojis como sustitutos permanentes de iconos del sistema.
+
+## 4.2. Ventanas
+
+El gestor de ventanas debe permitir:
+
+- Abrir múltiples ventanas.
+- Minimizar.
+- Maximizar.
+- Restaurar.
+- Cerrar.
+- Redimensionar.
+- Mover.
+- Organizar.
+- Cambiar entre ventanas.
+- Mantener ventanas superpuestas.
+- Recordar dimensiones cuando corresponda.
+
+Las ventanas deben tener:
+
+- Barra de título.
+- Icono de aplicación.
+- Nombre.
+- Controles de ventana.
+- Área de contenido.
+- Estados visuales.
+
+## 4.3. Barra de tareas
+
+Debe incluir:
+
+- Menú de inicio.
+- Aplicaciones ancladas.
+- Aplicaciones abiertas.
+- Indicadores de ejecución.
+- Bandeja del sistema.
+- Wi-Fi.
+- Bluetooth.
+- Sonido.
+- Batería, cuando corresponda.
+- USB y dispositivos conectados.
+- Reloj.
+- Calendario.
+- Notificaciones.
+
+La barra debe ajustarse automáticamente cuando el usuario cambie:
+
+- Tamaño de letra.
+- Tamaño de iconos.
+- Resolución.
+- Escala de pantalla.
+- Tamaño de ventana.
+
+No permitas que los iconos se superpongan ni que la hora, fecha o indicadores desaparezcan.
+
+Si no hay espacio, reorganiza los elementos, contrae etiquetas o habilita un área de desbordamiento accesible.
+
+---
+
+# 5. MENÚ DE INICIO Y MENÚS CONTEXTUALES
+
+Implementa un menú de inicio funcional.
+
+Debe incluir:
+
+- Aplicaciones instaladas.
+- Aplicaciones ancladas.
+- Búsqueda.
+- Documentos recientes.
+- Carpetas frecuentes.
+- Usuario.
+- Configuración.
+- Bloqueo.
+- Cierre de sesión.
+- Apagado.
+- Reinicio.
+
+## 5.1. Motor de menús contextuales
+
+Implementa un administrador centralizado de menús contextuales.
+
+Debe funcionar en:
+
+- Escritorio vacío.
+- Archivos.
+- Carpetas.
+- Explorador de archivos.
+- Papelera.
+- Aplicaciones.
+- Barra de tareas.
+- Ventanas.
+- Pestañas.
+- Descargas.
+- Dispositivos externos.
+- Unidades.
+- Terminal.
+- Notificaciones.
+- Reloj.
+- Calendario.
+
+Los menús deben posicionarse cerca del cursor y evitar salirse de los límites de la pantalla.
+
+Deben cerrarse al hacer clic fuera, al presionar Escape o después de ejecutar una acción cuando corresponda.
+
+Implementa submenús como:
+
+- Abrir.
+- Abrir con.
+- Nuevo.
+- Copiar.
+- Cortar.
+- Pegar.
+- Eliminar.
+- Cambiar nombre.
+- Compartir.
+- Enviar a.
+- Comprimir.
+- Extraer.
+- Propiedades.
+- Ordenar por.
+- Actualizar.
+
+Cada acción debe ejecutar una operación real.
+
+---
+
+# 6. ESCRITORIO Y PERSONALIZACIÓN
+
+Implementa un centro de personalización completo.
+
+Debe permitir modificar:
+
+- Fondo de escritorio.
+- Fondo de bloqueo.
+- Imagen personalizada.
+- Colores.
+- Tema.
+- Tamaño de letra.
+- Tamaño de iconos.
+- Escala de interfaz.
+- Cursor.
+- Barra de tareas.
+- Transparencia.
+- Efectos de ventanas.
+- Animaciones.
+- Sonidos del sistema.
+- Apariencia de menús.
+
+Permite seleccionar imágenes almacenadas en el equipo.
+
+Los cambios deben aplicarse inmediatamente cuando sea posible y conservarse después de reiniciar.
+
+Utiliza almacenamiento persistente real, no estados temporales que desaparezcan al cerrar la aplicación.
+
+---
+
+# 7. PANTALLA DE BLOQUEO, USUARIOS Y SESIONES
+
+Desarrolla un sistema real de usuarios y autenticación.
+
+## 7.1. Pantalla de bloqueo
+
+Debe mostrar únicamente:
+
+- Fondo de pantalla.
+- Hora.
+- Fecha.
+- Notificaciones.
+
+No muestres en la pantalla de bloqueo tarjetas de perfil, correo electrónico, nombres de usuario ni mensajes como «Deslizar o pulsar para desbloquear».
+
+Al interactuar con la pantalla, debe aparecer el formulario de contraseña.
+
+Incluye:
+
+- Campo de contraseña.
+- Botón para mostrar u ocultar contraseña.
+- Botón «Iniciar sesión».
+- Mensajes de error.
+- Validación de credenciales.
+
+## 7.2. Usuarios
+
+Permite:
+
+- Crear usuarios.
+- Iniciar sesión.
+- Cerrar sesión.
+- Cambiar contraseña.
+- Administrar perfiles.
+- Asignar permisos.
+- Bloquear sesiones.
+- Cambiar fotografía de perfil.
+
+Las contraseñas deben almacenarse mediante mecanismos criptográficos seguros de hashing.
+
+No guardes contraseñas en texto plano.
+
+## 7.3. Apagado
+
+El botón de apagado debe ejecutar una operación real.
+
+Al seleccionar «Apagar»:
+
+1. Solicitar confirmación.
+2. Cerrar aplicaciones de forma ordenada.
+3. Guardar estados y datos cuando corresponda.
+4. Detener servicios.
+5. Ejecutar el apagado real del sistema.
+
+Cuando el equipo se vuelva a encender, debe mostrar la pantalla de bloqueo normal, con fondo, hora, fecha y notificaciones.
+
+Después de introducir la contraseña y pulsar «Iniciar sesión», debe accederse a la sesión existente del usuario.
+
+## 7.4. Reinicio y reinstalación
+
+Implementa dos operaciones claramente diferenciadas:
+
+**Reiniciar:** reinicia realmente el equipo y vuelve a la pantalla de bloqueo conservando los datos y la instalación.
+
+**Restablecer o reinstalar desde cero:** inicia el asistente de instalación de GTEMS OS y permite realizar una instalación limpia.
+
+Si se desea conservar el comportamiento solicitado anteriormente de que el botón «Reinicio» lleve directamente a la instalación inicial, configúralo como una opción de reinstalación/restablecimiento claramente identificada.
+
+Antes de borrar datos, muestra una advertencia y exige confirmación explícita.
+
+Nunca elimines archivos personales sin autorización.
+
+---
+
+# 8. NAVEGADOR PREDETERMINADO: GOOGLE CHROME
+
+El navegador predeterminado de GTEMS OS debe ser **Google Chrome**.
+
+No quiero un navegador ficticio con una barra de direcciones que solamente muestre páginas simuladas.
+
+## 8.1. Integración real de Chrome
+
+Integra Google Chrome como navegador del sistema.
+
+Cuando la arquitectura y las licencias lo permitan, utiliza la distribución oficial de Google Chrome para la plataforma compatible.
+
+Si se necesita un motor embebido, utiliza una tecnología Chromium compatible y diferencia claramente el motor Chromium del producto Google Chrome.
+
+No presentes una versión modificada de Chromium como si fuera Google Chrome oficial.
+
+Implementa un mecanismo para:
+
+- Detectar Chrome instalado.
+- Instalarlo desde una fuente oficial compatible.
+- Actualizarlo.
+- Establecerlo como navegador predeterminado.
+- Abrir enlaces externos con Chrome.
+- Gestionar protocolos HTTP y HTTPS.
+
+Si Chrome no está disponible en una plataforma, informa al usuario y ofrece una alternativa compatible sin fingir que Chrome está instalado.
+
+## 8.2. Navegación por Internet
+
+Debe permitir acceder libremente a direcciones URL públicas y compatibles con el navegador.
+
+Debe funcionar con:
+
+- Google.
+- YouTube.
+- Reddit.
+- Sitios educativos.
+- Redes sociales.
+- Plataformas de trabajo.
+- Servicios de correo.
+- Páginas comerciales.
+- Sitios HTTPS.
+- Páginas dinámicas.
+- Aplicaciones web.
+
+Incluye:
+
+- Barra de direcciones.
+- Búsqueda integrada con Google.
+- Pestañas.
+- Historial.
+- Favoritos.
+- Descargas.
+- Zoom.
+- Retroceder.
+- Avanzar.
+- Actualizar.
+- Página de inicio.
+- Navegación privada.
+- Gestión de permisos.
+- Cookies.
+- Configuración de privacidad.
+- Contraseñas mediante los mecanismos seguros del navegador.
+
+No utilices iframes como sustituto de un navegador real.
+
+No intentes eludir restricciones de seguridad de sitios web.
+
+## 8.3. Cuentas de Google
+
+Permite utilizar el inicio de sesión de Google mediante los mecanismos oficiales de autenticación de Chrome y Google.
+
+El usuario debe poder iniciar sesión, utilizar servicios compatibles y sincronizar su cuenta cuando Google lo permita.
+
+No almacenes credenciales de Google directamente en GTEMS OS.
+
+No simules una pantalla de registro de Chrome si no existe autenticación real.
+
+---
+
+# 9. CONECTIVIDAD REAL Y WI-FI
+
+Implementa administración nativa de redes.
+
+No quiero un interruptor visual que cambie de color sin modificar la conexión del equipo.
+
+## 9.1. Wi-Fi
+
+Debe permitir:
+
+- Activar Wi-Fi.
+- Desactivar Wi-Fi.
+- Buscar redes.
+- Mostrar redes disponibles.
+- Mostrar intensidad de señal.
+- Identificar redes protegidas.
+- Introducir contraseña.
+- Conectarse.
+- Desconectarse.
+- Olvidar redes.
+- Guardar redes autorizadas.
+- Reconectarse automáticamente.
+
+Mostrar:
+
+- Nombre de red.
+- Estado.
+- Intensidad.
+- Seguridad.
+- Dirección IP.
+- DNS.
+- Puerta de enlace.
+
+## 9.2. Ethernet
+
+Detectar conexiones por cable.
+
+Mostrar:
+
+- Estado.
+- Adaptador.
+- Dirección IP.
+- Velocidad, cuando esté disponible.
+- Estado de Internet.
+
+## 9.3. Diagnóstico de red
+
+Implementa:
+
+- Detección de conexión.
+- Validación de acceso a Internet.
+- Diagnóstico DNS.
+- Pruebas de conectividad.
+- Estado de interfaces.
+- Información de red.
+
+Utiliza servicios nativos apropiados, como NetworkManager en distribuciones Linux compatibles.
+
+La interfaz debe reflejar el estado real de la conexión.
+
+---
+
+# 10. DETECCIÓN DE HARDWARE Y DISPOSITIVOS EXTERNOS
+
+GTEMS OS debe reconocer los dispositivos conectados al equipo.
+
+Implementa detección de:
+
+- USB.
+- Memorias USB.
+- Discos externos.
+- Teclados.
+- Ratones.
+- Auriculares.
+- Altavoces.
+- Micrófonos.
+- Cámaras.
+- Impresoras.
+- Escáneres.
+- Pantallas externas.
+- Adaptadores de red.
+- Bluetooth.
+- Mandos de juego.
+- Tarjetas de memoria.
+- Otros dispositivos compatibles.
+
+## 10.1. Administrador de dispositivos
+
+Crea una aplicación que muestre:
+
+- Dispositivos conectados.
+- Nombre.
+- Fabricante.
+- Tipo.
+- Estado.
+- Controlador.
+- Información técnica disponible.
+- Conexión o puerto.
+
+Debe detectar conexiones y desconexiones en tiempo real.
+
+## 10.2. USB y almacenamiento externo
+
+Al conectar un USB:
+
+1. Detectar el dispositivo.
+2. Identificar sus particiones.
+3. Montar automáticamente cuando sea seguro.
+4. Mostrar una notificación.
+5. Permitir abrirlo desde el explorador.
+6. Permitir copiar, mover y eliminar archivos.
+7. Permitir expulsarlo de forma segura.
+
+No desconectes unidades mientras existan operaciones de escritura pendientes.
+
+## 10.3. Audio y cámaras
+
+Implementa administración de:
+
+- Dispositivo de entrada.
+- Dispositivo de salida.
+- Volumen.
+- Micrófono.
+- Cámara.
+- Permisos de acceso.
+
+Permite seleccionar dispositivos predeterminados cuando la plataforma lo admita.
+
+---
+
+# 11. GTEMS EXPLORER: ADMINISTRADOR DE ARCHIVOS
+
+Desarrolla un explorador de archivos real.
+
+Debe permitir acceder al sistema de archivos autorizado del usuario.
+
+## 11.1. Navegación
+
+Incluye:
+
+- Inicio.
+- Escritorio.
+- Documentos.
+- Descargas.
+- Imágenes.
+- Música.
+- Vídeos.
+- Papelera.
+- Unidades.
+- Dispositivos externos.
+- Carpetas personales.
+
+Debe permitir navegar entre directorios y consultar rutas.
+
+## 11.2. Crear y abrir archivos
+
+Permite crear:
+
+- Carpetas.
+- Archivos de texto.
+- Documentos.
+- Archivos de código.
+- Archivos HTML.
+- Otros formatos compatibles.
+
+El sistema debe reconocer las extensiones y abrir cada archivo con su aplicación predeterminada o con una aplicación seleccionada por el usuario.
+
+## 11.3. Tipos de archivos
+
+Implementa un registro de tipos MIME, extensiones y aplicaciones compatibles.
+
+Incluye, como mínimo:
+
+**Documentos y texto**
+
+- .txt
+- .rtf
+- .doc
+- .docx
+- .odt
+- .pdf
+- .xls
+- .xlsx
+- .ods
+- .csv
+- .ppt
+- .pptx
+- .odp
+- .md
+- .epub
+
+**Imágenes**
+
+- .jpg
+- .jpeg
+- .png
+- .gif
+- .bmp
+- .webp
+- .svg
+- .tif
+- .tiff
+- .ico
+- .heic
+- .avif
+- .raw
+
+**Audio**
+
+- .mp3
+- .wav
+- .ogg
+- .flac
+- .aac
+- .m4a
+- .wma
+- .opus
+- .mid
+- .midi
+
+**Vídeo**
+
+- .mp4
+- .mkv
+- .avi
+- .mov
+- .wmv
+- .webm
+- .mpeg
+- .mpg
+- .m4v
+- .3gp
+- .ts
+
+**Comprimidos y paquetes**
+
+- .zip
+- .rar
+- .7z
+- .tar
+- .gz
+- .bz2
+- .xz
+- .zst
+- .tgz
+- .iso
+- .deb
+- .rpm
+- .AppImage
+- .flatpak
+- .snap
+
+**Código y desarrollo**
+
+- .html
+- .htm
+- .css
+- .js
+- .jsx
+- .ts
+- .tsx
+- .json
+- .xml
+- .yaml
+- .yml
+- .py
+- .php
+- .java
+- .c
+- .cpp
+- .h
+- .cs
+- .go
+- .rs
+- .sh
+- .bat
+- .ps1
+- .sql
+- .md
+
+**Ejecutables y bibliotecas**
+
+- .exe
+- .msi
+- .dll
+- .so
+- .bin
+- .elf
+- .app
+- .jar
+- .class
+- .wasm
+
+**Fuentes y diseño**
+
+- .ttf
+- .otf
+- .woff
+- .woff2
+- .psd
+- .ai
+- .eps
+- .xcf
+- .blend
+- .obj
+- .stl
+- .fbx
+
+**Datos y bases de datos**
+
+- .db
+- .sqlite
+- .sqlite3
+- .sql
+- .bak
+- .dat
+- .log
+
+**Otros**
+
+- .torrent
+- .ics
+- .vcf
+- .pem
+- .crt
+- .key
+- .cer
+- .p12
+- .pfx
+
+Esta lista es una base de compatibilidad, no una afirmación de que todos los formatos puedan abrirse de forma nativa sin dependencias.
+
+El sistema debe ampliar el registro de extensiones y asociaciones conforme se agreguen aplicaciones.
+
+## 11.4. Apertura mediante doble clic
+
+Implementa comportamiento de escritorio convencional:
+
+- Doble clic en carpeta: abrir carpeta.
+- Doble clic en imagen: abrir visualizador.
+- Doble clic en audio: abrir reproductor.
+- Doble clic en vídeo: abrir reproductor.
+- Doble clic en HTML: abrir en Chrome o navegador predeterminado.
+- Doble clic en documento: abrir aplicación compatible.
+- Doble clic en comprimido: abrir gestor de archivos comprimidos.
+- Doble clic en aplicación compatible: ejecutar o instalar según su formato.
+
+Un solo clic debe seleccionar el elemento.
+
+## 11.5. Selección múltiple
+
+Implementa selección múltiple mediante:
+
+- Ctrl + clic.
+- Shift + clic.
+- Selección con el ratón.
+- Ctrl + A.
+
+Debe permitir seleccionar varios archivos y carpetas simultáneamente.
+
+## 11.6. Operaciones múltiples
+
+Sobre los elementos seleccionados permite:
+
+- Copiar.
+- Cortar.
+- Pegar.
+- Mover.
+- Eliminar.
+- Cambiar nombre.
+- Comprimir.
+- Extraer.
+- Compartir.
+- Consultar propiedades.
+
+Implementa operaciones reales sobre el sistema de archivos.
+
+Añade confirmación para operaciones destructivas y soporte para deshacer cuando sea técnicamente posible.
+
+---
+
+# 12. DESCARGAS, INSTALACIÓN DE APLICACIONES Y GESTOR DE PAQUETES
+
+Todo lo descargado debe ser realmente utilizable.
+
+No quiero que las descargas sean únicamente archivos que aparecen en una lista.
+
+## 12.1. Descargas
+
+Implementa:
+
+- Descarga real desde Internet.
+- Barra de progreso.
+- Velocidad.
+- Tamaño.
+- Pausar cuando sea compatible.
+- Reanudar cuando el servidor lo permita.
+- Cancelar.
+- Abrir ubicación.
+- Abrir archivo descargado.
+- Historial.
+
+Los archivos descargados deben almacenarse físicamente en la carpeta correspondiente.
+
+## 12.2. Instalación de aplicaciones
+
+Implementa un gestor de aplicaciones que permita instalar, actualizar y desinstalar software compatible.
+
+Debe reconocer los formatos de paquetes de la distribución elegida.
+
+Utiliza un gestor de paquetes real y repositorios confiables.
+
+En una distribución Linux basada en Debian, por ejemplo, puedes integrar APT y paquetes DEB. Para otros formatos, utiliza sus herramientas oficiales cuando estén disponibles.
+
+Incluye:
+
+- Instalación.
+- Desinstalación.
+- Actualización.
+- Dependencias.
+- Verificación de integridad.
+- Registro de instalaciones.
+- Permisos.
+- Accesos directos.
+- Aplicaciones predeterminadas.
+
+No declares que un archivo `.exe` se puede instalar de forma nativa en Linux. Si se utiliza Wine u otra capa de compatibilidad, identifica sus limitaciones y solicita la instalación de componentes necesarios.
+
+## 12.3. Seguridad de descargas
+
+Comprueba:
+
+- Procedencia.
+- Integridad.
+- Firma digital, cuando exista.
+- Dependencias.
+- Permisos.
+- Riesgos de ejecución.
+
+No ejecutes automáticamente cualquier archivo descargado.
+
+---
+
+# 13. APLICACIONES PREDETERMINADAS
+
+GTEMS OS debe incluir un conjunto de aplicaciones funcionales.
+
+## 13.1. Visualizador y editor de imágenes
+
+Crea una aplicación para visualizar imágenes.
+
+Debe permitir abrir archivos reales desde el explorador.
+
+Formatos compatibles según las bibliotecas disponibles:
+
+- JPG.
+- JPEG.
+- PNG.
+- GIF.
+- BMP.
+- WEBP.
+- SVG.
+- TIFF.
+- AVIF.
+- HEIC, cuando se disponga de soporte.
+
+Funciones:
+
+- Abrir.
+- Zoom.
+- Ajustar a pantalla.
+- Rotar.
+- Voltear.
+- Recortar.
+- Redimensionar.
+- Editar.
+- Ajustar brillo.
+- Ajustar contraste.
+- Ajustar saturación.
+- Guardar.
+- Guardar como.
+- Exportar.
+- Eliminar.
+
+Los cambios deben aplicarse al archivo mediante operaciones reales.
+
+No muestres una vista previa ficticia de la imagen.
+
+## 13.2. Reproductor de música
+
+Crea un reproductor de audio real.
+
+Debe permitir:
+
+- Abrir archivos.
+- Reproducir.
+- Pausar.
+- Detener.
+- Avanzar.
+- Retroceder.
+- Ajustar volumen.
+- Controlar progreso.
+- Mostrar duración.
+- Mostrar metadatos.
+- Crear listas de reproducción.
+- Reproducir carpetas.
+- Repetir.
+- Aleatorio.
+
+## 13.3. Reproductor de vídeo
+
+Permite reproducir archivos de vídeo compatibles.
+
+Incluye:
+
+- Controles.
+- Volumen.
+- Pantalla completa.
+- Barra de progreso.
+- Subtítulos cuando estén disponibles.
+- Velocidad de reproducción.
+
+## 13.4. Editor de texto
+
+Incluye un editor para crear y modificar:
+
+- TXT.
+- MD.
+- HTML.
+- CSS.
+- JS.
+- JSON.
+- XML.
+- Otros formatos de texto.
+
+Debe permitir guardar archivos reales.
+
+## 13.5. Terminal
+
+Integra una terminal real del sistema, no un simulador de comandos.
+
+---
+
+# 14. TERMINAL O CONSOLA COMPLETA
+
+Desarrolla una terminal que permita interactuar con el sistema operativo real.
+
+La terminal debe ejecutar procesos y comandos mediante el shell instalado.
+
+No quiero una lista de comandos que únicamente devuelva mensajes simulados.
+
+## 14.1. Shell
+
+Integra un shell real, como Bash, compatible con la distribución elegida.
+
+Debe permitir:
+
+- Ejecutar comandos.
+- Introducir parámetros.
+- Ejecutar scripts.
+- Usar tuberías.
+- Redirecciones.
+- Variables.
+- Historial.
+- Autocompletado.
+- Directorios de trabajo.
+- Procesos en primer plano.
+- Procesos en segundo plano.
+- Señales.
+- Interrupciones.
+- Variables de entorno.
+
+## 14.2. Comandos
+
+Incluye las herramientas estándar disponibles en la distribución y documenta su instalación.
+
+**Archivos y directorios**
+
+- pwd
+- ls
+- cd
+- mkdir
+- rmdir
+- touch
+- cp
+- mv
+- rm
+- ln
+- find
+- locate
+- tree
+- file
+- stat
+- basename
+- dirname
+
+**Lectura y edición**
+
+- cat
+- less
+- more
+- head
+- tail
+- nano
+- vi
+- grep
+- sed
+- awk
+- sort
+- uniq
+- wc
+- diff
+- cmp
+
+**Permisos y usuarios**
+
+- chmod
+- chown
+- chgrp
+- umask
+- id
+- whoami
+- who
+- groups
+- passwd
+- su
+- sudo
+
+**Procesos y rendimiento**
+
+- ps
+- top
+- htop
+- kill
+- killall
+- nice
+- renice
+- jobs
+- bg
+- fg
+- free
+- uptime
+- time
+
+**Sistema y almacenamiento**
+
+- uname
+- hostname
+- hostnamectl
+- df
+- du
+- lsblk
+- blkid
+- mount
+- umount
+- dmesg
+- journalctl
+- systemctl
+- reboot
+- shutdown
+
+**Redes**
+
+- ip
+- ping
+- ss
+- curl
+- wget
+- traceroute
+- tracepath
+- dig
+- nslookup
+- host
+- nmcli
+- nmtui
+- resolvectl
+
+**Compresión**
+
+- zip
+- unzip
+- tar
+- gzip
+- gunzip
+- bzip2
+- xz
+- 7z
+
+**Desarrollo**
+
+- git
+- gcc
+- g++
+- make
+- cmake
+- python3
+- pip
+- node
+- npm
+
+**Administración de paquetes**
+
+- apt
+- apt-get
+- dpkg
+
+Los comandos anteriores son ejemplos de herramientas que deben estar disponibles según la distribución y los paquetes instalados.
+
+No prometas que todos estarán presentes en una instalación mínima si no se han instalado sus dependencias.
+
+## 14.3. Comandos propios de GTEMS OS
+
+Crea una utilidad de administración denominada `gtemsctl`.
+
+Debe permitir consultar y administrar servicios propios del sistema.
+
+Ejemplos de comandos:
+
+- `gtemsctl system info`
+- `gtemsctl system status`
+- `gtemsctl network status`
+- `gtemsctl network scan`
+- `gtemsctl devices list`
+- `gtemsctl storage list`
+- `gtemsctl apps list`
+- `gtemsctl apps install`
+- `gtemsctl apps remove`
+- `gtemsctl update check`
+- `gtemsctl logs`
+- `gtemsctl help`
+
+Cada comando debe estar implementado y conectado a las herramientas o servicios correspondientes.
+
+Incluye manuales y ayuda integrada.
+
+## 14.4. Seguridad de la terminal
+
+No ejecutes comandos privilegiados sin autorización.
+
+Implementa permisos de usuario, control de privilegios y registro de operaciones administrativas.
+
+La terminal debe comportarse como una terminal real, respetando los permisos del sistema.
+
+---
+
+# 15. CONFIGURACIÓN DEL SISTEMA
+
+Desarrolla una aplicación llamada **Configuración**.
+
+Su distribución debe tomar como referencia la captura de configuración proporcionada anteriormente:
+
+- Barra lateral izquierda.
+- Perfil de usuario.
+- Buscador superior.
+- Área principal.
+- Tarjetas.
+- Categorías.
+- Navegación organizada.
+
+## 15.1. Categorías
+
+Organiza las opciones en:
+
+1. Inicio.
+2. Sistema.
+3. Bluetooth y dispositivos.
+4. Red e Internet.
+5. Personalización.
+6. Aplicaciones.
+7. Cuentas.
+8. Hora e idioma.
+9. Juegos.
+10. Acerca de.
+
+No incluyas categorías independientes denominadas:
+
+- Windows Update.
+- Accesibilidad.
+- Privacidad y seguridad.
+
+Las funciones de seguridad y accesibilidad que sean necesarias deben seguir existiendo dentro de los servicios correspondientes del sistema, aunque no aparezcan como categorías independientes en este menú.
+
+No incluyas Windows Update como componente del sistema GTEMS OS. Implementa un mecanismo propio de actualizaciones compatible con su distribución Linux.
+
+## 15.2. Buscador de configuración
+
+Debe encontrar opciones por nombre y dirigir al usuario a la configuración correspondiente.
+
+Ejemplos:
+
+- RAM.
+- Procesador.
+- Bluetooth.
+- Wi-Fi.
+- Sonido.
+- Fondo de pantalla.
+- Almacenamiento.
+- Fecha.
+- Aplicaciones.
+
+## 15.3. Información del sistema
+
+En «Acerca de» muestra:
+
+- Nombre GTEMS OS.
+- Slogan.
+- Logotipo.
+- Descripción.
+- Versión.
+- Compilación.
+- Fecha de instalación.
+- Desarrolladores.
+- Información del dispositivo.
+
+Incluye exactamente los cinco desarrolladores oficiales indicados en la sección de identidad.
+
+---
+
+# 16. ESPECIFICACIONES REALES DEL HARDWARE
+
+La sección «Acerca de» debe consultar el equipo físico.
+
+Incluye:
+
+**Nombre del dispositivo**
+
+Nombre real del equipo.
+
+**Procesador**
+
+Fabricante, modelo, arquitectura, núcleos y frecuencia cuando estén disponibles.
+
+**RAM instalada**
+
+Capacidad total, memoria utilizada y memoria disponible.
+
+**Tarjeta gráfica**
+
+Fabricante, modelo, memoria gráfica y controlador cuando estén disponibles.
+
+**Almacenamiento**
+
+Unidades, particiones, capacidad, espacio ocupado y espacio disponible.
+
+**Identificador de dispositivo**
+
+Identificador estable obtenido mediante un mecanismo autorizado.
+
+**Id. del producto**
+
+Identificador de instalación o producto propio de GTEMS OS, claramente identificado según corresponda.
+
+**Tipo de sistema**
+
+Arquitectura del sistema, versión del kernel y plataforma anfitriona cuando corresponda.
+
+No inventes datos.
+
+Si un dato no puede obtenerse, muestra «Información no disponible».
+
+---
+
+# 17. ACTUALIZACIONES Y MANTENIMIENTO
+
+Implementa un mecanismo propio de actualización.
+
+Debe permitir:
+
+- Consultar actualizaciones.
+- Descargar paquetes.
+- Verificar integridad.
+- Instalar actualizaciones.
+- Actualizar aplicaciones.
+- Consultar historial.
+- Consultar errores.
+- Reiniciar cuando sea necesario.
+
+Utiliza repositorios y mecanismos reales.
+
+No descargues ni ejecutes actualizaciones desde fuentes desconocidas.
+
+Implementa recuperación ante fallos y procedimientos de restauración compatibles con la distribución.
+
+---
+
+# 18. SEGURIDAD GENERAL
+
+GTEMS OS debe incorporar seguridad desde su arquitectura.
+
+Incluye:
+
+- Usuarios y grupos.
+- Permisos.
+- Autenticación.
+- Hashing de contraseñas.
+- Separación de privilegios.
+- Control de procesos.
+- Aislamiento de aplicaciones.
+- Protección del sistema de archivos.
+- Firewall.
+- Gestión de servicios.
+- Control de dispositivos.
+- Actualizaciones verificadas.
+- Gestión de certificados.
+- Protección de datos.
+- Registro de eventos.
+
+Las aplicaciones descargadas no deben obtener permisos administrativos automáticamente.
+
+Implementa confirmaciones para operaciones delicadas.
+
+No desactives las protecciones de seguridad para facilitar la ejecución de programas.
+
+---
+
+# 19. NOTIFICACIONES Y CENTRO DE CONTROL
+
+Implementa un centro de notificaciones real.
+
+Debe mostrar:
+
+- Notificaciones de aplicaciones.
+- Descargas.
+- Conexión de dispositivos.
+- Estado de batería.
+- Errores.
+- Actualizaciones.
+- Alertas del sistema.
+
+Incluye controles rápidos para:
+
+- Wi-Fi.
+- Bluetooth.
+- Volumen.
+- Brillo.
+- Modo de energía.
+- No molestar.
+- Conectividad.
+
+Cada control debe estar conectado a un servicio real.
+
+---
+
+# 20. PAPELERA Y ADMINISTRACIÓN DE ARCHIVOS ELIMINADOS
+
+Implementa una papelera funcional.
+
+Debe permitir:
+
+- Consultar archivos eliminados.
+- Restaurar.
+- Eliminar definitivamente.
+- Vaciar papelera.
+- Consultar fecha de eliminación.
+- Consultar tamaño.
+
+No confundas mover a la papelera con borrar definitivamente.
+
+Implementa confirmaciones y protección contra eliminaciones accidentales.
+
+---
+
+# 21. ADMINISTRADOR DE TAREAS
+
+Crea un administrador de tareas que consulte información real del sistema.
+
+Debe mostrar:
+
+- Procesos.
+- Aplicaciones abiertas.
+- CPU.
+- RAM.
+- Almacenamiento.
+- Red.
+- Uso de recursos.
+- Tiempo de ejecución.
+
+Permite finalizar procesos cuando el usuario tenga permisos suficientes.
+
+No muestres cifras inventadas.
+
+---
+
+# 22. SONIDO, PANTALLA Y ENERGÍA
+
+Implementa administración real de:
+
+**Sonido**
+
+- Volumen.
+- Dispositivos de salida.
+- Dispositivos de entrada.
+- Micrófonos.
+- Auriculares.
+- Altavoces.
+
+**Pantalla**
+
+- Resolución.
+- Escala.
+- Brillo cuando el hardware lo permita.
+- Monitores.
+- Orientación cuando sea compatible.
+
+**Energía**
+
+- Estado de batería.
+- Porcentaje.
+- Estado de carga.
+- Suspensión.
+- Hibernación cuando sea compatible.
+- Apagado.
+- Reinicio.
+
+No muestres controles que no tengan acceso real a la función correspondiente.
+
+---
+
+# 23. COMPATIBILIDAD Y EJECUCIÓN DE APLICACIONES
+
+GTEMS OS debe permitir ejecutar aplicaciones nativas compatibles con su plataforma.
+
+Debe incluir:
+
+- Aplicaciones del sistema.
+- Paquetes de la distribución.
+- Aplicaciones de escritorio compatibles.
+- Aplicaciones web.
+- Herramientas de desarrollo.
+- Programas instalados por el usuario.
+
+Para formatos de otras plataformas, utiliza capas de compatibilidad cuando corresponda y explica sus limitaciones.
+
+Por ejemplo:
+
+- Wine para determinadas aplicaciones Windows.
+- Máquinas virtuales para sistemas invitados.
+- Contenedores para entornos aislados.
+
+No afirmes compatibilidad universal con todos los ejecutables.
+
+---
+
+# 24. PERSISTENCIA Y RECUPERACIÓN
+
+Toda la configuración debe persistir.
+
+Después de apagar y encender el equipo, deben mantenerse:
+
+- Usuarios.
+- Contraseñas.
+- Archivos.
+- Aplicaciones.
+- Fondos.
+- Preferencias.
+- Historiales.
+- Favoritos.
+- Configuración de red autorizada.
+- Ajustes del sistema.
+
+Implementa mecanismos de respaldo y recuperación.
+
+Las operaciones de restablecimiento deben ser explícitas y no ejecutarse accidentalmente.
+
+---
+
+# 25. ARQUITECTURA DEL PROYECTO Y ORGANIZACIÓN DEL CÓDIGO
+
+Organiza el repositorio de forma modular.
+
+Una estructura orientativa sería:
+
+```text
+GTEMS-OS/
+│
+├── boot/
+│   ├── bootloader/
+│   └── initramfs/
+│
+├── kernel/
+│   ├── config/
+│   ├── modules/
+│   └── patches/
+│
+├── drivers/
+│   ├── network/
+│   ├── audio/
+│   ├── usb/
+│   ├── graphics/
+│   └── storage/
+│
+├── system/
+│   ├── services/
+│   ├── users/
+│   ├── security/
+│   ├── networking/
+│   ├── devices/
+│   └── power/
+│
+├── desktop/
+│   ├── shell/
+│   ├── window-manager/
+│   ├── compositor/
+│   ├── taskbar/
+│   ├── start-menu/
+│   ├── notifications/
+│   └── context-menu/
+│
+├── applications/
+│   ├── browser/
+│   ├── file-manager/
+│   ├── image-viewer/
+│   ├── image-editor/
+│   ├── music-player/
+│   ├── video-player/
+│   ├── terminal/
+│   ├── settings/
+│   ├── task-manager/
+│   └── device-manager/
+│
+├── installer/
+│
+├── packages/
+│
+├── themes/
+│
+├── assets/
+│
+├── tests/
+│
+├── documentation/
+│
+└── build/
+```
+
+Esta estructura es orientativa. Adáptala a las herramientas y tecnologías seleccionadas.
+
+No mezcles controladores, kernel, interfaz gráfica y lógica de aplicaciones en un solo proyecto.
+
+Documenta las dependencias y los procedimientos de compilación.
+
+---
+
+# 26. PRUEBAS OBLIGATORIAS
+
+No declares el proyecto terminado simplemente porque la interfaz se vea bien o porque el código compile.
+
+Debes ejecutar pruebas reales.
+
+## 26.1. Pruebas de arranque
+
+- Arrancar desde ISO.
+- Arrancar desde USB.
+- Arrancar en máquina virtual.
+- Arrancar en hardware compatible.
+- Comprobar el gestor de arranque.
+- Comprobar el kernel.
+- Comprobar los servicios.
+
+## 26.2. Pruebas de instalación
+
+- Instalar el sistema.
+- Crear usuario.
+- Configurar contraseña.
+- Instalar el gestor de arranque.
+- Reiniciar.
+- Iniciar sesión.
+- Verificar persistencia.
+
+## 26.3. Pruebas de hardware
+
+- Detectar CPU.
+- Detectar RAM.
+- Detectar GPU.
+- Detectar almacenamiento.
+- Detectar USB.
+- Detectar audio.
+- Detectar cámara.
+- Detectar dispositivos externos.
+
+## 26.4. Pruebas de red
+
+- Escanear redes Wi-Fi.
+- Conectarse a una red.
+- Desconectarse.
+- Reconectarse.
+- Utilizar Ethernet.
+- Navegar por Internet.
+- Resolver DNS.
+
+## 26.5. Pruebas del navegador
+
+- Abrir Chrome.
+- Abrir Google.
+- Abrir YouTube.
+- Abrir páginas HTTPS.
+- Abrir múltiples pestañas.
+- Descargar archivos.
+- Utilizar el historial.
+- Guardar favoritos.
+- Iniciar sesión en servicios compatibles.
+
+## 26.6. Pruebas de archivos
+
+- Crear archivos.
+- Crear carpetas.
+- Abrir con doble clic.
+- Seleccionar varios.
+- Copiar.
+- Mover.
+- Eliminar.
+- Comprimir.
+- Extraer.
+- Restaurar desde papelera.
+- Abrir imágenes.
+- Reproducir audio.
+- Reproducir vídeo.
+- Abrir HTML en Chrome.
+
+## 26.7. Pruebas de aplicaciones
+
+- Instalar.
+- Ejecutar.
+- Actualizar.
+- Desinstalar.
+- Comprobar asociaciones de archivos.
+
+## 26.8. Pruebas del escritorio
+
+- Minimizar.
+- Maximizar.
+- Restaurar.
+- Cerrar.
+- Mover ventanas.
+- Cambiar resolución.
+- Cambiar escala.
+- Cambiar tamaño de texto.
+- Cambiar tamaño de iconos.
+- Comprobar barra de tareas.
+- Comprobar menús contextuales.
+
+## 26.9. Pruebas de energía
+
+- Bloquear.
+- Iniciar sesión.
+- Cerrar sesión.
+- Apagar.
+- Encender.
+- Reiniciar.
+- Restablecer mediante el procedimiento de reinstalación.
+
+---
+
+# 27. METODOLOGÍA DE DESARROLLO
+
+No intentes desarrollar todas las partes de manera desordenada.
+
+Trabaja por fases.
+
+**FASE 1. Análisis y arquitectura**
+
+- Seleccionar la distribución base.
+- Definir kernel.
+- Seleccionar tecnologías.
+- Definir dependencias.
+- Diseñar arquitectura.
+- Crear repositorio.
+
+**FASE 2. Base del sistema**
+
+- Kernel.
+- Arranque.
+- Sistema de archivos.
+- Servicios.
+- Usuarios.
+- Permisos.
+
+**FASE 3. Instalador**
+
+- ISO.
+- Arranque.
+- Particionado.
+- Instalación.
+- Configuración inicial.
+
+**FASE 4. Entorno gráfico**
+
+- Gestor de ventanas.
+- Escritorio.
+- Barra de tareas.
+- Inicio.
+- Notificaciones.
+- Menús contextuales.
+
+**FASE 5. Hardware y conectividad**
+
+- Wi-Fi.
+- Ethernet.
+- USB.
+- Audio.
+- Cámaras.
+- Dispositivos externos.
+
+**FASE 6. Aplicaciones**
+
+- Chrome.
+- Explorador.
+- Terminal.
+- Visualizador.
+- Editor.
+- Reproductores.
+- Configuración.
+
+**FASE 7. Gestión del sistema**
+
+- Usuarios.
+- Procesos.
+- Actualizaciones.
+- Paquetes.
+- Seguridad.
+- Energía.
+
+**FASE 8. Pruebas e integración**
+
+- Pruebas de módulos.
+- Pruebas de integración.
+- Pruebas de hardware.
+- Pruebas de instalación.
+- Pruebas de rendimiento.
+
+**FASE 9. Distribución**
+
+- Compilar ISO.
+- Documentar instalación.
+- Documentar requisitos.
+- Preparar versión estable.
+
+Al terminar cada fase, verifica que sus componentes funcionen antes de avanzar.
+
+---
+
+# 28. REGLAS INNEGOCIABLES DEL PROYECTO
+
+1. No crear una simple simulación visual de un sistema operativo.
+2. No utilizar datos falsos de hardware.
+3. No utilizar interruptores que no controlen servicios reales.
+4. No presentar descargas ficticias como archivos instalados.
+5. No presentar archivos descargados como aplicaciones instaladas si no lo están.
+6. No simular conexiones Wi-Fi.
+7. No simular detección de USB.
+8. No utilizar una barra de direcciones que no permita navegar realmente.
+9. No sustituir Google Chrome por un iframe.
+10. No crear una terminal que solamente responda a comandos programados.
+11. No afirmar que existe un kernel propio si solamente se ha personalizado la interfaz de otro sistema.
+12. No dejar botones sin funcionalidad.
+13. No dejar ventanas decorativas.
+14. No eliminar características existentes sin una razón técnica documentada.
+15. No almacenar información sensible de forma insegura.
+16. No borrar datos del usuario sin confirmación.
+17. No inventar compatibilidad con formatos o hardware.
+18. No ocultar errores para aparentar que todo funciona.
+19. No declarar completado un módulo sin pruebas.
+20. Documentar todas las dependencias, permisos y limitaciones.
+
+Si una funcionalidad no puede implementarse con la arquitectura seleccionada, explica por qué y desarrolla la alternativa técnica más adecuada.
+
+---
+
+# 29. RESULTADO FINAL Y ENTREGABLES
+
+Al finalizar, el proyecto debe entregar:
+
+1. Código fuente completo de GTEMS OS.
+2. Kernel configurado e integrado.
+3. Gestor de arranque.
+4. Sistema de archivos.
+5. Servicios del sistema.
+6. Controladores compatibles.
+7. Instalador funcional.
+8. Imagen ISO arrancable.
+9. Escritorio gráfico.
+10. Gestor de ventanas.
+11. Barra de tareas.
+12. Menú de inicio.
+13. Pantalla de bloqueo.
+14. Sistema de usuarios.
+15. Navegador Google Chrome integrado.
+16. Conectividad Wi-Fi y Ethernet.
+17. Administrador de dispositivos.
+18. Explorador de archivos.
+19. Sistema de descargas.
+20. Gestor de aplicaciones.
+21. Terminal real.
+22. Visualizador y editor de imágenes.
+23. Reproductor de música.
+24. Reproductor de vídeo.
+25. Aplicación de Configuración.
+26. Información del hardware.
+27. Administrador de tareas.
+28. Sistema de actualizaciones.
+29. Sistema de apagado y reinicio.
+30. Documentación técnica.
+31. Manual de instalación.
+32. Manual de usuario.
+33. Resultados de las pruebas.
+
+Incluye también:
+
+- Requisitos mínimos y recomendados.
+- Hardware compatible.
+- Dependencias.
+- Instrucciones para compilar.
+- Instrucciones para ejecutar en máquina virtual.
+- Instrucciones para instalar en un equipo físico.
+- Limitaciones conocidas.
+- Estado real de cada funcionalidad.
+
+---
+
+# 30. VISIÓN FINAL DE GTEMS OS
+
+GTEMS OS debe ser un sistema operativo de escritorio con identidad propia, diseñado para ofrecer una experiencia completa y moderna.
+
+Debe integrar en un único entorno:
+
+- Un kernel real.
+- Un sistema de arranque.
+- Un instalador.
+- Una interfaz gráfica.
+- Un escritorio.
+- Un navegador Google Chrome.
+- Navegación por Internet.
+- Conectividad Wi-Fi.
+- Administración de dispositivos.
+- Explorador de archivos.
+- Gestión de descargas.
+- Instalación de aplicaciones.
+- Terminal real.
+- Reproductores multimedia.
+- Editor de imágenes.
+- Administración de hardware.
+- Configuración.
+- Usuarios.
+- Seguridad.
+- Apagado y reinicio.
+- Actualizaciones.
+- Herramientas de mantenimiento.
+
+La experiencia debe ser coherente desde el momento en que el usuario inicia el equipo hasta que lo apaga.
+
+El sistema debe ser estable, seguro, escalable y funcional.
+
+**GTEMS OS no debe ser una imitación de Windows, macOS o Linux. Debe ser un nuevo proyecto de sistema operativo con su propia identidad, su propia organización, sus aplicaciones y su experiencia de usuario.**
+
+# OBJETIVO DEFINITIVO
+
+Crear GTEMS OS:
+
+**«Diseñado por cinco mentes, construido para el futuro.»**
+
+Un sistema operativo real, instalable, arrancable y funcional, con una interfaz moderna, administración completa del equipo, conectividad real, navegador Chrome, aplicaciones nativas y herramientas integradas.
+
+**NO QUIERO UN PROTOTIPO QUE SOLAMENTE SE VEA COMO UN SISTEMA OPERATIVO. QUIERO QUE SE CONSTRUYA UN SISTEMA OPERATIVO REAL, CON SUS COMPONENTES TÉCNICOS, SU INSTALADOR, SU KERNEL, SUS SERVICIOS Y TODAS LAS FUNCIONES IMPLEMENTADAS Y VERIFICADAS.**

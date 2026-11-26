@@ -1,0 +1,44 @@
+#!/bin/sh
+# GTEMS OS Initramfs Early Boot Script
+# Capa 1-2: Detección temprana de hardware y montaje del sistema raíz
+
+export PATH=/sbin:/bin:/usr/sbin:/usr/bin
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+mkdir -p /dev/pts /run /mnt/root
+mount -t devpts devpts /dev/pts
+
+echo "GTEMS OS Initramfs: Inicializando kernel y controladores..."
+
+# Carga temprana de módulos de almacenamiento, USB y gráficos
+for mod in ext4 vfat usb_storage xhci_hcd ahci nvme drm; do
+    modprobe "$mod" 2>/dev/null || true
+done
+
+# Espera de dispositivos de bloques
+udevadm trigger --action=add 2>/dev/null || true
+udevadm settle --timeout=10 2>/dev/null || true
+
+ROOT_DEV=""
+for arg in $(cat /proc/cmdline); do
+    case "$arg" in
+        root=*) ROOT_DEV="${arg#root=}" ;;
+    esac
+done
+
+if [ -z "$ROOT_DEV" ]; then
+    echo "GTEMS OS Error: Parámetro root= no especificado. Abriendo shell de emergencia."
+    exec /bin/sh
+fi
+
+RESOLVED_DEV=$(blkid -t "$ROOT_DEV" -o device 2>/dev/null | head -n1)
+[ -z "$RESOLVED_DEV" ] && RESOLVED_DEV="$ROOT_DEV"
+
+mount -o ro "$RESOLVED_DEV" /mnt/root || {
+    echo "GTEMS OS Error: No se pudo montar la raíz $RESOLVED_DEV"
+    exec /bin/sh
+}
+
+exec switch_root /mnt/root /sbin/init

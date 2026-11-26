@@ -1,0 +1,1248 @@
+# PROMPT DE ACTUALIZACIÓN Y OPTIMIZACIÓN INTEGRAL — GTEMS OS
+
+## Buscador real, personalización avanzada, navegadores, descargas, idiomas, barra lateral, aplicaciones y herramientas de desarrollo
+
+Actúa como un equipo de ingenieros senior especializados en sistemas operativos Linux, desarrollo de aplicaciones de escritorio, frontend, backend, arquitectura de software, interfaces gráficas, controladores, redes, seguridad y herramientas de desarrollo.
+
+Tu objetivo es actualizar y perfeccionar el proyecto existente de **GTEMS OS**, integrando las funcionalidades que se habían diseñado y solicitado anteriormente para ZEYLA OS, adaptándolas correctamente a la arquitectura actual de GTEMS OS.
+
+**No debes crear otro proyecto ni reemplazar el sistema actual. Debes trabajar sobre el repositorio existente, conservar las funcionalidades que ya funcionan y mejorar los módulos correspondientes.**
+
+El resultado debe ser un sistema operativo coherente, visualmente profesional, personalizable, estable y funcional.
+
+# 1. BUSCADOR 100% FUNCIONAL DENTRO DEL SISTEMA
+
+Mejora completamente el buscador integrado de GTEMS OS.
+
+No quiero un buscador decorativo que únicamente filtre elementos de una lista local. Debe funcionar realmente y permitir realizar búsquedas dentro del sistema y en Internet.
+
+## 1.1. Buscador del sistema
+
+Implementa una búsqueda global que permita localizar:
+
+- Aplicaciones instaladas.
+- Aplicaciones disponibles.
+- Archivos.
+- Carpetas.
+- Documentos.
+- Imágenes.
+- Vídeos.
+- Música.
+- Descargas.
+- Configuraciones.
+- Dispositivos.
+- Procesos.
+- Herramientas del sistema.
+- Historial de búsqueda.
+
+Debe consultar las ubicaciones y fuentes reales correspondientes.
+
+Incluye:
+- Resultados en tiempo real.
+- Sugerencias.
+- Búsqueda por nombre.
+- Búsqueda por extensión.
+- Búsqueda por contenido cuando el formato lo permita.
+- Filtros por categoría.
+- Ordenamiento.
+- Historial.
+- Acceso directo al elemento encontrado.
+
+Al seleccionar un archivo, debe abrirlo con su aplicación predeterminada.
+
+Al seleccionar una aplicación, debe ejecutarla.
+
+Al seleccionar una configuración, debe abrir directamente esa sección.
+
+## 1.2. Búsqueda en Internet
+
+Integra un buscador web funcional.
+
+Debe permitir:
+
+- Escribir cualquier consulta.
+- Realizar búsquedas mediante Google.
+- Abrir resultados.
+- Acceder a páginas web.
+- Introducir direcciones URL completas.
+- Utilizar HTTPS.
+- Abrir enlaces externos.
+- Navegar entre páginas.
+- Consultar sitios dinámicos.
+- Utilizar servicios que requieren JavaScript.
+- Gestionar redirecciones.
+- Mostrar errores de navegación reales.
+
+No utilices resultados ficticios ni páginas estáticas de demostración.
+
+No utilices iframes como sustituto de un navegador real.
+
+El buscador debe funcionar tanto cuando se acceda a él desde el escritorio como desde la aplicación de navegador.
+
+## 1.3. Barra de búsqueda
+
+Mejora su presentación:
+
+- Diseño limpio.
+- Icono de búsqueda.
+- Campo de texto adaptable.
+- Sugerencias.
+- Historial desplegable.
+- Indicador de carga.
+- Resultados organizados.
+- Navegación mediante teclado.
+- Atajos.
+- Diseño responsive.
+
+Evita que los resultados se superpongan con ventanas, menús o la barra de tareas.
+
+# 2. PERSONALIZACIÓN AVANZADA — RECUPERAR LOS ESTILOS DE ZEYLA OS
+
+Amplía el apartado **Configuración → Personalización**.
+
+Recupera las opciones de apariencia que se habían planteado para ZEYLA OS y adáptalas a GTEMS OS.
+
+No conviertas GTEMS OS nuevamente en ZEYLA OS. Únicamente recupera sus opciones de personalización.
+
+## 2.1. Temas disponibles
+
+Incluye los siguientes estilos:
+
+**ZEYLA NEON**
+- Azul eléctrico.
+- Fucsia.
+- Violeta.
+- Bordes luminosos.
+- Fondos oscuros.
+- Efectos de neón.
+
+**ZEYLA PASTEL**
+- Tonos pastel.
+- Rosa suave.
+- Lila.
+- Celeste.
+- Verde claro.
+- Apariencia delicada.
+
+**ZEYLA AURORA**
+- Menta.
+- Turquesa.
+- Azul suave.
+- Degradados de aurora.
+- Superficies de cristal.
+- Glassmorphism.
+
+**ZEYLA DREAM**
+- Colores suaves.
+- Degradados creativos.
+- Tonos lavanda.
+- Rosa y azul.
+- Efectos visuales ligeros.
+
+**ZEYLA MIDNIGHT**
+- Fondos oscuros.
+- Azul profundo.
+- Violeta.
+- Contrastes.
+- Iluminación ambiental.
+
+**ZEYLA CRYSTAL**
+- Blanco perlado.
+- Cristal.
+- Lila.
+- Transparencias.
+- Reflejos.
+- Superficies brillantes.
+
+**PERSONALIZADO**
+- Selección manual de colores.
+- Fondos.
+- Transparencias.
+- Efectos.
+- Bordes.
+- Iconos.
+- Tipografía.
+- Cursor.
+
+El tema predeterminado de GTEMS OS puede conservar la identidad visual Aurora, pero el usuario debe poder seleccionar cualquiera de los demás estilos.
+
+## 2.2. Aplicación global de los temas
+
+Al seleccionar un tema, debe modificarse automáticamente toda la interfaz:
+
+- Escritorio.
+- Pantalla de bloqueo.
+- Inicio.
+- Barra de tareas.
+- Ventanas.
+- Explorador de archivos.
+- Configuración.
+- Navegadores integrados.
+- Terminal.
+- Aplicaciones.
+- Menús contextuales.
+- Notificaciones.
+- Calendario.
+- Paneles.
+- Diálogos.
+- Barras de desplazamiento.
+- Botones.
+- Campos de texto.
+- Indicadores de carga.
+
+No permitas que algunas aplicaciones conserven colores antiguos mientras otras cambian.
+
+Implementa un sistema centralizado de temas mediante variables de diseño, tokens y configuración persistente.
+
+## 2.3. Fondos de pantalla
+
+Permite:
+
+- Seleccionar imágenes locales.
+- Importar imágenes.
+- Descargar fondos.
+- Utilizar fondos del sistema.
+- Ajustar el encuadre.
+- Rellenar pantalla.
+- Centrar.
+- Ajustar.
+- Estirar.
+- Aplicar fondos diferentes al escritorio y a la pantalla de bloqueo.
+
+Los cambios deben guardarse.
+
+## 2.4. Animaciones
+
+Recupera las opciones de animación de ZEYLA OS.
+
+Incluye animaciones configurables para:
+
+- Abrir ventanas.
+- Cerrar ventanas.
+- Minimizar.
+- Maximizar.
+- Cambiar de aplicación.
+- Abrir el menú de inicio.
+- Mostrar notificaciones.
+- Abrir paneles.
+- Transiciones del escritorio.
+- Menús contextuales.
+- Efectos de selección.
+- Aparición de iconos.
+
+Incluye distintos niveles:
+
+- Sin animaciones.
+- Animaciones suaves.
+- Animaciones normales.
+- Animaciones fluidas.
+- Animaciones completas.
+
+El usuario debe poder modificar la velocidad e intensidad cuando corresponda.
+
+Respeta la preferencia de movimiento reducido del sistema.
+
+No permitas que las animaciones consuman recursos excesivos o bloqueen la interfaz.
+
+## 2.5. Tipos de punteros
+
+Recupera la personalización de cursores.
+
+Incluye:
+
+- Cursor clásico.
+- Cursor minimalista.
+- Cursor moderno.
+- Cursor circular.
+- Cursor luminoso.
+- Cursor neón.
+- Cursor personalizado.
+- Diferentes tamaños.
+- Diferentes colores.
+- Estados de selección.
+- Estados de carga.
+- Estados de redimensionamiento.
+- Estados de escritura.
+
+Permite importar un paquete de cursores cuando su formato sea compatible.
+
+El cambio debe aplicarse al cursor real del entorno gráfico, no únicamente a una representación dentro de la página web.
+
+## 2.6. Tamaños y escalado
+
+Permite modificar:
+
+- Tamaño de fuente.
+- Tamaño de iconos.
+- Escala general.
+- Altura de ventanas.
+- Espaciado.
+- Transparencia.
+- Bordes.
+- Tamaño de barra de tareas.
+
+Todos los elementos deben adaptarse automáticamente.
+
+# 3. CORRECCIÓN GLOBAL DE DISEÑO Y DISTRIBUCIÓN
+
+Realiza una revisión completa de la interfaz de GTEMS OS.
+
+Actualmente es necesario evitar que las letras, iconos, botones, imágenes y demás componentes aparezcan desalineados, fuera de sus contenedores o encima de otros elementos.
+
+Esta optimización debe aplicarse a todo el sistema.
+
+## 3.1. Problemas que deben corregirse
+
+- Texto cortado.
+- Iconos fuera de posición.
+- Botones superpuestos.
+- Elementos fuera de las ventanas.
+- Ventanas que exceden la pantalla.
+- Barras de desplazamiento incorrectas.
+- Campos de texto desalineados.
+- Elementos que desaparecen.
+- Información que no cabe.
+- Títulos superpuestos.
+- Menús que salen de la pantalla.
+- Notificaciones que cubren controles.
+- Contenido que queda detrás de la barra de tareas.
+- Iconos deformados.
+- Elementos que se desplazan al cambiar el tamaño de fuente.
+
+## 3.2. Diseño adaptable
+
+Implementa un sistema de distribución consistente.
+
+Utiliza:
+
+- Flexbox.
+- CSS Grid.
+- Contenedores adaptables.
+- Escalado proporcional.
+- Variables CSS.
+- Límites de ancho y alto.
+- Espaciados consistentes.
+- Gestión de desbordamiento.
+- Puntos de interrupción.
+- Reglas de posicionamiento.
+
+Evita utilizar posiciones absolutas indiscriminadamente.
+
+## 3.3. Adaptación automática
+
+Cuando el usuario modifique el tamaño de texto o iconos, todos los componentes deben reorganizarse.
+
+La barra de tareas, los paneles, los menús y las ventanas deben adaptarse sin superposición.
+
+Verifica la interfaz en distintas resoluciones y escalas de pantalla.
+
+# 4. IDIOMAS DEL SISTEMA — LOCALIZACIÓN COMPLETA
+
+Amplía Configuración → Hora e idioma → Idioma.
+
+Incluye una biblioteca de idiomas basada en códigos de idioma estándar y catálogos de traducción reales.
+
+Incluye, como mínimo:
+
+- Español.
+- Inglés.
+- Francés.
+- Alemán.
+- Italiano.
+- Portugués.
+- Portugués brasileño.
+- Neerlandés.
+- Ruso.
+- Ucraniano.
+- Chino simplificado.
+- Chino tradicional.
+- Japonés.
+- Coreano.
+- Árabe.
+- Hindi.
+- Turco.
+- Polaco.
+- Sueco.
+- Noruego.
+- Danés.
+- Finlandés.
+- Griego.
+- Checo.
+- Rumano.
+- Húngaro.
+- Indonesio.
+- Tailandés.
+- Vietnamita.
+- Hebreo.
+- Catalán.
+- Euskera.
+- Gallego.
+
+Puedes agregar más idiomas mediante paquetes de localización.
+
+## 4.1. Cambio automático de idioma
+
+Cuando el usuario seleccione un idioma, todo el sistema debe cambiar automáticamente.
+
+No debe cambiar únicamente el título de Configuración.
+
+Deben traducirse:
+
+- Escritorio.
+- Menú de inicio.
+- Barra de tareas.
+- Configuración.
+- Navegador.
+- Explorador.
+- Terminal.
+- Aplicaciones.
+- Notificaciones.
+- Menús contextuales.
+- Botones.
+- Mensajes.
+- Errores.
+- Diálogos.
+- Calendario.
+- Reloj.
+- Instalador.
+- Pantalla de bloqueo.
+- Ayuda.
+- Mensajes del sistema.
+
+Implementa un sistema centralizado de internacionalización (i18n).
+
+Utiliza archivos de traducción independientes.
+
+No escribas traducciones directamente en cada componente.
+
+Ejemplo conceptual:
+
+```text
+locales/
+├── es/
+│   └── translation.json
+├── en/
+│   └── translation.json
+├── fr/
+│   └── translation.json
+├── de/
+│   └── translation.json
+├── pt/
+│   └── translation.json
+├── ja/
+│   └── translation.json
+└── ...
+```
+
+## 4.2. Persistencia
+
+Guarda el idioma elegido.
+
+Al reiniciar el sistema, debe conservarse.
+
+Las aplicaciones deben utilizar la misma configuración de idioma siempre que sea posible.
+
+Si una aplicación externa no dispone de una traducción determinada, debe conservar su idioma disponible sin romper la interfaz.
+
+No muestres traducciones faltantes como claves internas del sistema.
+
+## 4.3. Formatos regionales
+
+Adapta también:
+
+- Formato de fecha.
+- Formato de hora.
+- Separadores decimales.
+- Moneda.
+- Números.
+- Calendario.
+- Dirección del texto.
+- Formato de escritura.
+
+Implementa correctamente idiomas RTL, como árabe y hebreo.
+
+# 5. ZONAS HORARIAS Y CONFIGURACIÓN REGIONAL
+
+Amplía Configuración → Hora e idioma → Fecha y hora.
+
+Utiliza la base de datos oficial de zonas horarias IANA.
+
+No limites las opciones a unas pocas ciudades.
+
+Permite seleccionar las zonas horarias disponibles en la base de datos.
+
+Incluye:
+
+- Continente.
+- País.
+- Ciudad o región.
+- Identificador IANA.
+- Diferencia horaria.
+- Horario de verano cuando corresponda.
+
+Ejemplos:
+
+- America/Tegucigalpa.
+- America/New_York.
+- America/Mexico_City.
+- America/Los_Angeles.
+- America/Bogota.
+- America/Lima.
+- America/Santiago.
+- America/Argentina/Buenos_Aires.
+- Europe/Madrid.
+- Europe/London.
+- Europe/Paris.
+- Europe/Berlin.
+- Asia/Tokyo.
+- Asia/Seoul.
+- Asia/Shanghai.
+- Asia/Dubai.
+- Australia/Sydney.
+- Pacific/Auckland.
+
+La lista debe obtenerse de la base de datos de zonas horarias, no limitarse a estos ejemplos.
+
+## 5.1. Cambio automático
+
+Al seleccionar una zona horaria, debe cambiar:
+
+- Reloj.
+- Calendario.
+- Hora de la barra de tareas.
+- Fecha.
+- Aplicaciones.
+- Registros.
+- Programaciones del sistema.
+
+Utiliza la configuración regional real del sistema operativo cuando corresponda.
+
+Permite activar la detección automática de zona horaria cuando el hardware, los servicios y los permisos lo permitan.
+
+---
+
+# 6. GESTIÓN DE APLICACIONES PREINSTALADAS
+
+Implementa un administrador de aplicaciones completo.
+
+Debe distinguir claramente entre:
+
+1. Aplicaciones esenciales del sistema.
+2. Aplicaciones preinstaladas.
+3. Aplicaciones instaladas por el usuario.
+4. Aplicaciones disponibles para instalar.
+5. Aplicaciones en ejecución.
+
+## 6.1. Administración
+
+Desde Configuración → Aplicaciones, permite:
+
+- Consultar aplicaciones.
+- Buscar.
+- Filtrar.
+- Ver información.
+- Instalar.
+- Desinstalar.
+- Actualizar.
+- Reparar cuando sea posible.
+- Cambiar aplicaciones predeterminadas.
+- Consultar permisos.
+- Consultar almacenamiento.
+- Administrar aplicaciones de inicio.
+
+## 6.2. Aplicaciones protegidas
+
+No permitas desinstalar componentes esenciales que puedan dejar el sistema inutilizable.
+
+Identifica las aplicaciones protegidas y explica por qué no pueden eliminarse.
+
+## 6.3. Aplicaciones preinstaladas
+
+Integra y administra las aplicaciones oficiales de GTEMS OS:
+
+- GTEMS Explorer.
+- GTEMS Terminal.
+- GTEMS Settings.
+- GTEMS Browser.
+- Visualizador de imágenes.
+- Editor de imágenes.
+- Reproductor de música.
+- Reproductor de vídeo.
+- Administrador de tareas.
+- Administrador de dispositivos.
+- Aplicación de programación.
+- Herramientas del sistema.
+
+No muestres aplicaciones instaladas si sus ejecutables o paquetes no existen realmente.
+
+# 7. DESCARGAS 100% FUNCIONALES
+
+Optimiza por completo el administrador de descargas.
+
+Las descargas deben ser reales y los archivos deben guardarse físicamente en el almacenamiento.
+
+No utilices datos simulados.
+
+## 7.1. Características
+
+Incluye:
+
+- Descarga desde Internet.
+- Barra de progreso real.
+- Porcentaje real.
+- Velocidad.
+- Tamaño descargado.
+- Tamaño total cuando esté disponible.
+- Tiempo estimado cuando pueda calcularse.
+- Pausar cuando el servidor lo permita.
+- Reanudar cuando sea compatible.
+- Cancelar.
+- Eliminar.
+- Abrir archivo.
+- Mostrar ubicación.
+- Historial.
+- Gestión de errores.
+
+## 7.2. Integración
+
+Integra las descargas con:
+
+- GTEMS Browser.
+- Google Chrome.
+- Firefox.
+- Microsoft Edge.
+- Opera.
+- Explorador de archivos.
+- Aplicaciones.
+- Instalador de paquetes.
+
+Al finalizar una descarga, el archivo debe poder abrirse mediante doble clic.
+
+Las imágenes descargadas deben abrirse en el visualizador y editor.
+
+Los archivos de audio deben abrirse en el reproductor.
+
+Los vídeos deben abrirse en el reproductor de vídeo.
+
+Los archivos comprimidos deben poder extraerse.
+
+Los instaladores compatibles deben poder instalarse mediante el gestor de aplicaciones.
+
+## 7.3. Seguridad
+
+No ejecutes automáticamente archivos descargados.
+
+Verifica integridad, formato, permisos y procedencia cuando sea posible.
+
+Solicita confirmación antes de instalar o ejecutar contenido potencialmente peligroso.
+
+---
+
+# 8. INTEGRACIÓN DE NAVEGADORES REALES
+
+Implementa un administrador de navegadores del sistema.
+
+El usuario debe poder seleccionar el navegador predeterminado y administrar los navegadores disponibles.
+
+Incluye como objetivos:
+
+- Google Chrome.
+- Mozilla Firefox.
+- Microsoft Edge.
+- Opera.
+- Safari.
+
+## 8.1. Integración real
+
+No crees simples accesos directos que no tengan conexión con los navegadores.
+
+Implementa detección de instalaciones reales, rutas ejecutables, versiones, disponibilidad y compatibilidad.
+
+Permite:
+
+- Abrir.
+- Ejecutar.
+- Establecer como predeterminado.
+- Abrir enlaces.
+- Abrir archivos HTML.
+- Administrar descargas.
+- Gestionar perfiles cuando el navegador lo permita.
+- Desinstalar cuando proceda.
+
+## 8.2. Compatibilidad por plataforma
+
+Respeta las limitaciones reales de distribución.
+
+Por ejemplo, no presentes Safari como instalable oficialmente en Linux si no existe una versión compatible y soportada.
+
+Si un navegador no está disponible para la arquitectura o distribución, muéstralo como no compatible y explica la razón.
+
+No lo sustituyas silenciosamente por otro navegador.
+
+## 8.3. Navegador predeterminado
+
+Permite seleccionar el navegador que abrirá:
+
+- Enlaces.
+- Direcciones URL.
+- Archivos HTML.
+- Resultados de búsquedas.
+- Contenido web externo.
+
+Utiliza los mecanismos reales de asociación del sistema operativo.
+
+# 9. BARRA DE TAREAS VERTICAL EN EL LADO IZQUIERDO
+
+Rediseña la barra de tareas para que se encuentre permanentemente en el lateral izquierdo de la pantalla.
+
+Debe funcionar como una barra lateral vertical adaptable.
+
+No debe aparecer en la parte inferior por defecto.
+
+## 9.1. Elementos obligatorios
+
+Incluye:
+
+- Botón de inicio.
+- Buscador.
+- Aplicaciones ancladas.
+- Aplicaciones abiertas.
+- Explorador de archivos.
+- Navegadores.
+- Terminal.
+- Configuración.
+- Conectividad Wi-Fi.
+- Ethernet cuando corresponda.
+- Bluetooth.
+- Volumen.
+- Batería.
+- Hora.
+- Fecha.
+- Calendario.
+- Notificaciones.
+- Acceso a dispositivos.
+
+## 9.2. Wi-Fi
+
+Debe mostrar:
+
+- Estado de conexión.
+- Intensidad.
+- Nombre de la red.
+- Acceso a redes.
+- Conexión y desconexión.
+
+## 9.3. Volumen
+
+Debe mostrar:
+
+- Nivel de volumen.
+- Silencio.
+- Dispositivo de salida.
+- Dispositivo de entrada.
+- Acceso a configuración de sonido.
+
+## 9.4. Batería
+
+Debe mostrar:
+
+- Porcentaje.
+- Estado de carga.
+- Conectado a corriente.
+- Tiempo restante cuando pueda calcularse.
+- Modo de ahorro.
+
+Si el equipo no tiene batería, oculta este indicador o informa que no está disponible.
+
+## 9.5. Hora y calendario
+
+Muestra:
+
+- Hora.
+- Fecha.
+- Día.
+- Calendario desplegable.
+- Zona horaria configurada.
+
+## 9.6. Diseño adaptable
+
+La barra debe ajustarse automáticamente.
+
+Cuando se cambie el tamaño de texto o iconos:
+
+- Los iconos no deben superponerse.
+- Los textos no deben cortarse.
+- La hora debe seguir siendo legible.
+- El calendario debe abrirse correctamente.
+- Los indicadores deben conservar sus proporciones.
+
+Permite configurar el tamaño y el comportamiento de la barra.
+
+# 10. APLICACIÓN DE PROGRAMACIÓN — GTEMS CODE STUDIO
+
+Crea una aplicación de desarrollo integrada en GTEMS OS llamada:
+
+**GTEMS Code Studio**
+
+Debe ser un entorno de programación real, no un editor que únicamente colorea texto.
+
+## 10.1. Lenguajes
+
+Incluye soporte para:
+
+- Python.
+- JavaScript.
+- Java.
+- C++.
+- C#.
+- SQL.
+- TypeScript.
+
+Agrega soporte adicional cuando sea viable:
+
+- HTML.
+- CSS.
+- PHP.
+- C.
+- Go.
+- Rust.
+- Bash.
+- JSON.
+- XML.
+- YAML.
+
+## 10.2. Editor
+
+Incluye:
+
+- Resaltado de sintaxis.
+- Autocompletado.
+- Numeración de líneas.
+- Sangría automática.
+- Plegado de código.
+- Búsqueda.
+- Reemplazo.
+- Múltiples archivos.
+- Pestañas.
+- Explorador de proyectos.
+- Guardado.
+- Guardado automático opcional.
+- Temas.
+- Configuración de fuente.
+
+## 10.3. Ejecución real
+
+El sistema debe ejecutar código mediante intérpretes, compiladores o motores reales.
+
+Implementa detección de herramientas:
+
+| Lenguaje | Herramienta |
+|---|---|
+| Python | Python 3 |
+| JavaScript | Node.js |
+| Java | JDK |
+| C++ | GCC o Clang |
+| C# | .NET SDK |
+| SQL | Motor compatible, por ejemplo SQLite |
+| TypeScript | TypeScript Compiler y Node.js |
+
+No basta con mostrar una consola simulada.
+
+Debe ejecutar, compilar y mostrar resultados reales.
+
+## 10.4. Funciones de desarrollo
+
+Incluye:
+
+- Crear proyectos.
+- Abrir proyectos.
+- Crear archivos.
+- Guardar.
+- Ejecutar.
+- Compilar.
+- Detener ejecución.
+- Mostrar errores.
+- Mostrar salida.
+- Terminal integrada.
+- Gestión de dependencias cuando corresponda.
+
+Permite configurar compiladores e intérpretes.
+
+Si una herramienta no está instalada, ofrece instalarla mediante el gestor de paquetes.
+
+## 10.5. Seguridad de ejecución
+
+No ejecutes código arbitrario dentro del proceso privilegiado de la interfaz gráfica.
+
+Utiliza procesos independientes, permisos adecuados y, cuando corresponda, aislamiento mediante contenedores o sandboxes.
+
+Permite al usuario confirmar la ejecución de programas externos.
+
+# 11. TERMINAL — HISTORIAL PERSISTENTE DE LOS ÚLTIMOS 20 COMANDOS
+
+Implementa una función específica en:
+
+`src/components/apps/TerminalApp.tsx`
+
+Agrega un panel deslizante que muestre los últimos 20 comandos ejecutados.
+
+La función debe estar conectada al historial real de ejecución.
+
+## 11.1. Panel deslizante
+
+Añade un botón visible dentro de la terminal para abrir y cerrar el historial.
+
+Al abrirlo, debe aparecer un panel lateral o desplegable con los últimos 20 comandos.
+
+El panel debe incluir:
+
+- Número de comando.
+- Comando completo.
+- Fecha y hora de ejecución.
+- Estado de ejecución cuando esté disponible.
+
+Organiza los comandos desde el más reciente hasta el más antiguo.
+
+## 11.2. Persistencia
+
+El historial debe conservarse al:
+
+- Cerrar la terminal.
+- Abrirla nuevamente.
+- Cambiar de aplicación.
+- Cerrar sesión.
+- Reiniciar el sistema.
+
+Guárdalo en el almacenamiento persistente del usuario mediante el servicio de terminal o backend correspondiente.
+
+No dependas exclusivamente de variables React en memoria.
+
+No guardes contraseñas, tokens, claves privadas ni otros secretos introducidos accidentalmente en la terminal.
+
+Implementa una política para detectar y excluir información sensible cuando sea posible.
+
+## 11.3. Límite de 20 comandos
+
+Conserva únicamente los últimos 20 comandos en el panel.
+
+Cuando se ejecute el comando número 21, elimina del historial visible el más antiguo.
+
+No confundas el historial de la interfaz con el historial completo del shell, si ambos existen.
+
+## 11.4. Reejecución con un clic
+
+Al hacer clic en un comando del historial:
+
+1. Coloca el comando en el campo de entrada.
+2. Permite revisarlo antes de ejecutarlo, o proporciona una acción explícita de reejecución.
+3. Al confirmar, ejecútalo mediante el mismo servicio real de terminal.
+4. Muestra su salida.
+5. Actualiza el historial.
+
+No ejecutes automáticamente comandos peligrosos solo por seleccionar una fila.
+
+Incluye una opción para borrar el historial y solicita confirmación.
+
+## 11.5. Diseño
+
+El panel debe adaptarse al tamaño de la terminal.
+
+No debe cubrir permanentemente el área de escritura ni cortar la salida de los comandos.
+
+Implementa animaciones suaves y respeta la configuración de movimiento reducido.
+
+# 12. REUBICAR EL BOTÓN DE REINSTALACIÓN DEL SISTEMA
+
+Busca dónde se encuentra actualmente el botón de reinstalación.
+
+Reubícalo en:
+
+**Configuración → Sistema → Recuperación y reinstalación**
+
+No debe aparecer como un botón destacado en el escritorio ni confundirse con el reinicio normal.
+
+Incluye opciones diferenciadas:
+
+- Reiniciar sistema.
+- Apagar.
+- Restablecer configuración.
+- Reinstalar GTEMS OS.
+
+La reinstalación debe utilizar el instalador real del sistema.
+
+Antes de comenzar:
+
+- Explica las consecuencias.
+- Permite realizar una copia de seguridad.
+- Informa sobre el riesgo de pérdida de datos.
+- Solicita confirmación.
+- Comprueba que existe un medio de recuperación válido.
+
+No simules una reinstalación dentro de la aplicación web si la operación requiere modificar particiones o archivos del sistema.
+
+# 13. INTEGRACIÓN ENTRE LOS MÓDULOS
+
+Todas las funciones deben comunicarse entre sí.
+
+Ejemplos:
+
+**Buscador y aplicaciones**
+
+Cuando se busque una aplicación instalada, debe poder abrirse.
+
+**Buscador y archivos**
+
+Cuando se encuentre una imagen, debe abrirse con el visualizador.
+
+**Navegador y descargas**
+
+Cuando Chrome descargue un archivo, debe aparecer en el administrador de descargas.
+
+**Descargas y explorador**
+
+El archivo descargado debe estar disponible físicamente en la carpeta correspondiente.
+
+**Personalización y aplicaciones**
+
+Cuando se cambie el tema, todas las aplicaciones compatibles deben actualizar su apariencia.
+
+**Idioma y sistema**
+
+Cuando se cambie el idioma, todas las interfaces internas deben utilizarlo.
+
+**Zona horaria y barra lateral**
+
+La hora y fecha deben coincidir con la configuración regional real.
+
+**Terminal y Code Studio**
+
+Ambas aplicaciones deben utilizar los servicios de ejecución reales, respetando sus permisos.
+
+**Barra de tareas y dispositivos**
+
+Los indicadores deben reflejar el estado real del hardware.
+
+# 14. ARQUITECTURA Y CALIDAD DEL CÓDIGO
+
+Antes de modificar el proyecto:
+
+1. Inspecciona el repositorio.
+2. Identifica los componentes existentes.
+3. Revisa los servicios.
+4. Comprueba las APIs.
+5. Identifica errores.
+6. Revisa dependencias.
+7. Comprueba la arquitectura.
+8. Identifica funcionalidades incompletas.
+
+No dupliques módulos existentes.
+
+No crees servicios innecesarios.
+
+No reemplaces funciones que ya funcionan sin justificarlo.
+
+Utiliza una arquitectura modular y centralizada.
+
+Implementa:
+
+- Servicio de temas.
+- Servicio de idiomas.
+- Servicio de zonas horarias.
+- Servicio de aplicaciones.
+- Servicio de descargas.
+- Servicio de navegadores.
+- Servicio de búsqueda.
+- Servicio de dispositivos.
+- Servicio de terminal.
+- Servicio de ejecución de código.
+- Servicio de preferencias.
+
+Todos deben disponer de interfaces claras y validaciones.
+
+# 15. PRUEBAS OBLIGATORIAS
+
+No consideres terminada la actualización únicamente porque la interfaz se vea correctamente.
+
+Realiza pruebas funcionales.
+
+## Buscador
+- Buscar aplicaciones.
+- Buscar archivos.
+- Buscar configuraciones.
+- Buscar en Internet.
+- Abrir URLs.
+- Abrir resultados.
+
+## Personalización
+- Cambiar entre todos los temas.
+- Cambiar fondo.
+- Cambiar cursor.
+- Cambiar animaciones.
+- Cambiar tamaño de iconos.
+- Cambiar tamaño de texto.
+- Reiniciar y comprobar persistencia.
+
+## Diseño
+- Resoluciones diferentes.
+- Escalas diferentes.
+- Ventanas simultáneas.
+- Barra lateral.
+- Menús.
+- Notificaciones.
+- Ausencia de superposiciones.
+
+## Idiomas
+- Cambiar a español.
+- Cambiar a inglés.
+- Cambiar a francés.
+- Cambiar a japonés.
+- Cambiar a árabe.
+- Verificar RTL.
+- Reiniciar y comprobar persistencia.
+
+## Zonas horarias
+- Seleccionar distintas regiones.
+- Verificar hora.
+- Verificar calendario.
+- Verificar cambios de fecha.
+
+## Aplicaciones
+- Consultar.
+- Instalar.
+- Ejecutar.
+- Actualizar.
+- Desinstalar.
+
+## Descargas
+- Descargar imágenes.
+- Descargar documentos.
+- Descargar archivos comprimidos.
+- Descargar instaladores compatibles.
+- Abrir archivos.
+- Cancelar.
+- Reanudar cuando sea compatible.
+
+## Navegadores
+- Detectar instalaciones.
+- Abrir navegadores.
+- Navegar.
+- Abrir enlaces.
+- Cambiar navegador predeterminado.
+
+## Code Studio
+- Ejecutar Python.
+- Ejecutar JavaScript.
+- Compilar Java.
+- Compilar C++.
+- Ejecutar C#.
+- Ejecutar SQL.
+- Compilar TypeScript.
+- Mostrar errores.
+- Detener procesos.
+
+## Terminal
+- Ejecutar comandos.
+- Guardar historial.
+- Cerrar.
+- Abrir nuevamente.
+- Verificar los últimos 20.
+- Reejecutar.
+- Borrar historial.
+
+## Barra de tareas
+- Wi-Fi.
+- Ethernet.
+- Bluetooth.
+- Volumen.
+- Batería.
+- Hora.
+- Fecha.
+- Calendario.
+- Aplicaciones abiertas.
+
+# 16. METODOLOGÍA DE IMPLEMENTACIÓN
+
+Desarrolla los cambios por etapas:
+
+**FASE 1:** auditoría del proyecto existente.
+
+**FASE 2:** buscador global y búsqueda web.
+
+**FASE 3:** personalización, temas, cursores y animaciones.
+
+**FASE 4:** corrección de diseño, escalado y distribución.
+
+**FASE 5:** localización e idiomas.
+
+**FASE 6:** zonas horarias y formatos regionales.
+
+**FASE 7:** gestión de aplicaciones.
+
+**FASE 8:** descargas reales.
+
+**FASE 9:** integración de navegadores.
+
+**FASE 10:** barra de tareas vertical izquierda.
+
+**FASE 11:** GTEMS Code Studio.
+
+**FASE 12:** historial persistente de terminal.
+
+**FASE 13:** recuperación y reinstalación.
+
+**FASE 14:** integración y pruebas generales.
+
+No declares completada una fase sin comprobar su funcionamiento.
+
+# 17. REGLAS INNEGOCIABLES
+
+- No crear funcionalidades decorativas.
+- No simular descargas.
+- No mostrar porcentajes falsos.
+- No fingir que un navegador está instalado.
+- No presentar aplicaciones inexistentes.
+- No fingir que un lenguaje se ejecuta si no existe su intérprete o compilador.
+- No simular la conexión Wi-Fi.
+- No inventar dispositivos.
+- No dejar traducciones incompletas sin identificarlas.
+- No permitir que los elementos se superpongan.
+- No eliminar funcionalidades existentes.
+- No guardar contraseñas dentro del historial de terminal.
+- No ejecutar comandos peligrosos por un simple clic.
+- No permitir operaciones administrativas sin permisos.
+- No afirmar compatibilidad que no se haya probado.
+
+Si alguna funcionalidad no puede implementarse debido a las limitaciones reales de Linux, del hardware o de la arquitectura elegida, documenta la limitación y ofrece la alternativa técnicamente más adecuada.
+
+# 18. RESULTADO FINAL ESPERADO
+
+GTEMS OS debe contar con:
+
+1. Buscador global real.
+2. Búsqueda web funcional.
+3. Personalización con los estilos ZEYLA NEON, PASTEL, AURORA, DREAM, MIDNIGHT y CRYSTAL.
+4. Temas personalizados.
+5. Fondos de escritorio y bloqueo.
+6. Animaciones configurables.
+7. Tipos de punteros.
+8. Escalado automático.
+9. Diseño sin superposiciones.
+10. Amplia selección de idiomas.
+11. Traducción global del sistema.
+12. Zonas horarias IANA.
+13. Gestión de aplicaciones preinstaladas.
+14. Descargas reales.
+15. Integración de navegadores reales.
+16. Barra de tareas vertical izquierda.
+17. Indicadores reales de Wi-Fi, Ethernet, volumen y batería.
+18. Hora, fecha y calendario.
+19. GTEMS Code Studio.
+20. Ejecución real de Python, JavaScript, Java, C++, C#, SQL y TypeScript.
+21. Historial persistente de los últimos 20 comandos.
+22. Reejecución de comandos mediante el panel deslizante.
+23. Reinstalación desde Configuración → Sistema.
+24. Integración con los servicios reales del sistema operativo.
+
+**INSTRUCCIÓN FINAL:** trabaja sobre el GTEMS OS existente. Recupera las características y detalles solicitados anteriormente para ZEYLA OS, pero intégralos de manera coherente con la arquitectura y la identidad de GTEMS OS. No te limites a cambiar el diseño: implementa los servicios, conexiones, almacenamiento y procesos necesarios para que cada función trabaje realmente.
+
+El objetivo es conseguir un sistema operativo completo, personalizable, ordenado, estable y funcional, no una simple demostración visual.

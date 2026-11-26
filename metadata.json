@@ -1,0 +1,6 @@
+{
+  "name": "GTEMS OS",
+  "description": "GTEMS OS — Diseñado por cinco mentes, construido para el futuro. Sistema operativo modular basado en Linux con entorno gráfico Aurora, instalador, terminal Bash real, explorador de archivos y administración de hardware.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

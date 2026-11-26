@@ -1,0 +1,14 @@
+// GTEMS OS Polkit Authorization Rules (/etc/polkit-1/rules.d/50-gtems.rules)
+// Requiere autenticación explícita para particionado, gestión de paquetes y energía.
+
+polkit.addRule(function(action, subject) {
+    if (action.id === "org.freedesktop.udisks2.filesystem-mount" && subject.isInGroup("gtems-users")) {
+        return polkit.Result.YES;
+    }
+    if ((action.id.indexOf("org.debian.apt.") === 0 ||
+         action.id === "org.freedesktop.login1.power-off" ||
+         action.id === "org.freedesktop.login1.reboot") &&
+        subject.isInGroup("sudo")) {
+        return polkit.Result.AUTH_ADMIN;
+    }
+});

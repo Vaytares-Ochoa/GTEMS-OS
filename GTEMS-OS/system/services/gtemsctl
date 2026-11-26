@@ -1,0 +1,148 @@
+#!/usr/bin/env node
+// gtemsctl — Utilidad oficial de administración de GTEMS OS
+// Consulta el sistema real de Linux, red, almacenamiento, procesos y registros.
+
+import os from 'node:os';
+import fs from 'node:fs';
+import path from 'node:path';
+import { execFileSync } from 'node:child_process';
+
+const args = process.argv.slice(2);
+const cmd = args[0] || 'help';
+const sub = args[1] || '';
+
+function safeExec(bin, binArgs) {
+  try {
+    return execFileSync(bin, binArgs, { encoding: 'utf8', timeout: 4000 }).trim();
+  } catch (err) {
+    return `No disponible (${err.message})`;
+  }
+}
+
+function readDataFile(rel) {
+  const candidates = [
+    path.resolve(process.cwd(), '.gtems-data', rel),
+    path.resolve('/app/applet/.gtems-data', rel),
+  ];
+  for (const p of candidates) {
+    if (fs.existsSync(p)) {
+      try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return null; }
+    }
+  }
+  return null;
+}
+
+if (cmd === 'help' || cmd === '--help' || cmd === '-h') {
+  console.log(`gtemsctl — Herramienta de administración de GTEMS OS 1.0 Aurora
+Uso:
+  gtemsctl system info       Información real del kernel, CPU, RAM y equipo
+  gtemsctl system status     Estado de carga, memoria y tiempo de actividad
+  gtemsctl network status    Interfaces de red reales y DNS
+  gtemsctl network scan      Escaneo de interfaces inalámbricas disponibles
+  gtemsctl devices list      Dispositivos de bloque, red y sonido detectados
+  gtemsctl storage list      Unidades y sistemas de archivos montados
+  gtemsctl apps list         Aplicaciones GTEMS y paquetes dpkg del sistema
+  gtemsctl apps install <p>  Muestra procedimiento seguro de instalación (APT)
+  gtemsctl apps remove <p>   Muestra procedimiento seguro de desinstalación
+  gtemsctl update check      Verifica estado del repositorio de paquetes
+  gtemsctl logs              Últimos eventos de auditoría de GTEMS OS
+  gtemsctl help              Muestra esta ayuda`);
+  process.exit(0);
+}
+
+if (cmd === 'system' && sub === 'info') {
+  const cpus = os.cpus();
+  const totalMemGB = (os.totalmem() / 1024 ** 3).toFixed(2);
+  const freeMemGB = (os.freemem() / 1024 ** 3).toFixed(2);
+  console.log('=== GTEMS OS 1.0 Aurora — Información del Sistema ===');
+  console.log(`Slogan:        Diseñado por cinco mentes, construido para el futuro.`);
+  console.log(`Hostname:      ${os.hostname()}`);
+  console.log(`Kernel:        ${os.type()} ${os.release()} (${os.arch()})`);
+  console.log(`CPU:           ${cpus[0]?.model || 'Información no disponible'} (${cpus.length} núcleos)`);
+  console.log(`RAM Total:     ${totalMemGB} GiB (Libre: ${freeMemGB} GiB)`);
+  console.log(`Uptime:        ${Math.floor(os.uptime())} s`);
+  process.exit(0);
+}
+
+if (cmd === 'system' && sub === 'status') {
+  const load = os.loadavg().map(n => n.toFixed(2)).join(', ');
+  console.log(`Estado: Operativo | Carga promedio (1m, 5m, 15m): ${load}`);
+  console.log(safeExec('free', ['-h']));
+  process.exit(0);
+}
+
+if (cmd === 'network' && sub === 'status') {
+  console.log('=== Interfaces de Red (Kernel Linux) ===');
+  console.log(safeExec('ip', ['-brief', 'addr']));
+  if (fs.existsSync('/etc/resolv.conf')) {
+    console.log('\n=== DNS (/etc/resolv.conf) ===');
+    console.log(fs.readFileSync('/etc/resolv.conf', 'utf8').trim());
+  }
+  process.exit(0);
+}
+
+if (cmd === 'network' && sub === 'scan') {
+  const netDevs = fs.existsSync('/sys/class/net') ? fs.readdirSync('/sys/class/net') : [];
+  const wifi = netDevs.filter(d => d.startsWith('wl'));
+  if (wifi.length === 0) {
+    console.log('Sin adaptador Wi-Fi físico detectado en este entorno (solo interfaces cableadas/virtuales: ' + (netDevs.join(', ') || 'ninguna') + ').');
+  } else {
+    console.log(`Adaptadores Wi-Fi detectados: ${wifi.join(', ')}`);
+    console.log(safeExec('nmcli', ['dev', 'wifi', 'list']));
+  }
+  process.exit(0);
+}
+
+if (cmd === 'devices' && sub === 'list') {
+  console.log('=== Dispositivos de Almacenamiento ===');
+  console.log(safeExec('lsblk', ['-o', 'NAME,SIZE,TYPE,MOUNTPOINT']));
+  console.log('\n=== Interfaces de Red ===');
+  console.log(Object.keys(os.networkInterfaces()).join(', '));
+  process.exit(0);
+}
+
+if (cmd === 'storage' && sub === 'list') {
+  console.log(safeExec('df', ['-h']));
+  process.exit(0);
+}
+
+if (cmd === 'apps' && sub === 'list') {
+  console.log('=== Aplicaciones Predeterminadas GTEMS OS ===');
+  console.log('gtems-explorer, google-chrome-integracion, gtems-terminal, gtems-settings, gtems-taskmgr, gtems-devicemgr, gtems-image-editor, gtems-media-player');
+  console.log('\n=== Primeros 15 Paquetes Debian Instalados (dpkg-query) ===');
+  const pkgs = safeExec('dpkg-query', ['-W', '-f=${Package} ${Version}\\n']);
+  console.log(pkgs.split('\n').slice(0, 15).join('\n'));
+  process.exit(0);
+}
+
+if (cmd === 'apps' && (sub === 'install' || sub === 'remove')) {
+  const pkg = args[2];
+  if (!pkg) {
+    console.error(`Uso: gtemsctl apps ${sub} <paquete>`);
+    process.exit(1);
+  }
+  console.log(`Operación privilegiada requerida. Ejecute con autorización administrativa: sudo apt ${sub === 'install' ? 'install' : 'remove'} ${pkg}`);
+  process.exit(0);
+}
+
+if (cmd === 'update' && sub === 'check') {
+  console.log('Verificando estado de dpkg y fuentes APT...');
+  console.log(safeExec('dpkg', ['--audit']) || 'Base de datos de paquetes íntegra. Use "sudo apt update" con privilegios administrativos para refrescar índices.');
+  process.exit(0);
+}
+
+if (cmd === 'logs') {
+  const state = readDataFile('state.json');
+  const logs = state?.auditLogs || [];
+  if (logs.length === 0) {
+    console.log('No hay eventos registrados aún en el historial de auditoría GTEMS OS.');
+  } else {
+    for (const entry of logs.slice(-20)) {
+      console.log(`[${entry.timestamp}] [${entry.level}] ${entry.action}: ${entry.detail}`);
+    }
+  }
+  process.exit(0);
+}
+
+console.error(`Subcomando desconocido: "${args.join(' ')}". Ejecuta "gtemsctl help".`);
+process.exit(1);

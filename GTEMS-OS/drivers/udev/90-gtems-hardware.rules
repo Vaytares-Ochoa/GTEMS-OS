@@ -1,0 +1,12 @@
+# GTEMS OS Udev Hardware Detection Rules (/etc/udev/rules.d/90-gtems-hardware.rules)
+
+# Etiquetado de almacenamiento USB externo para montaje seguro por udisks2
+ACTION=="add", SUBSYSTEM=="block", ENV{ID_BUS}=="usb", ENV{UDISKS_AUTO}="1", TAG+="gtems-usb"
+
+# Permisos de audio e interfaces de vídeo para usuarios activos de consola
+SUBSYSTEM=="sound", GROUP="audio", MODE="0660"
+SUBSYSTEM=="video4linux", GROUP="video", MODE="0660"
+SUBSYSTEM=="drm", GROUP="video", MODE="0660"
+
+# Notificación al demonio de escritorio GTEMS en eventos de hardware en tiempo real
+ACTION=="add|remove", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", TAG+="gtems-device-event"
